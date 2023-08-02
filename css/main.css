@@ -291,7 +291,7 @@ button {
 
 .main {
   position: relative;
-  background-image: url("..//..//img/hero/gardener-bg.jpg");
+  background-image: url("../img/hero/gardener-bg.jpg");
   width: 1920px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -860,7 +860,7 @@ button {
 .seed {
   width: 1920px;
   height: 100%;
-  background-image: url("..//..//img/seed/seed-bg.jpg");
+  background-image: url("../img/seed/seed-bg.jpg");
   padding: 109px 0 120px 0;
 }
 
