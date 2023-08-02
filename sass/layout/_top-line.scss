@@ -1,0 +1,81 @@
+.top-line {
+    display: flex;
+    width: 1920px;
+    background: var(--top-line-bg);
+    padding: 15px 0;
+}
+
+.top-line__nav {
+    margin-right: 54px;
+    padding-left: 404px;
+}
+
+.top-line__nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.top-line__nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.top-line__nav-link {
+    color: var(--white-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    opacity: 0.6;
+    transition: opacity var(--function-transit);
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.top-line__line {
+    position: relative;
+    margin-right: 34px;
+}
+
+.top-line__line::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 1px;
+    height: 50px;
+    background: var(--top-line2-bg);
+}
+
+.authorization__img {
+    vertical-align: middle;
+}
+
+.authorization__btn-entry {
+    color: var(--white-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    opacity: 0.6;
+    background: transparent;
+    border: transparent;
+    transition: opacity var(--function-transit);
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.authorization__line {
+    color: var(--white-color);
+    opacity: 0.6;
+}
+
+.authorization__btn-registration {
+    @extend .authorization__btn-entry;
+        margin-right: 0;
+}

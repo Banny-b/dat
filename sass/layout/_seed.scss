@@ -1,0 +1,44 @@
+.seed {
+    width: 1920px;
+    height: 100%;
+    background-image: url("../../img/seed/seed-bg.jpg");
+    padding: 109px 0 120px 0;
+}
+
+.seed__wrapp {
+    display: flex;
+    margin-bottom: 16px;
+    padding-left: 405px;
+}
+
+.seed__wrapp-img-l {
+    margin-top: 20px;
+    margin-right: 17px;
+}
+
+.seed__wrapp-title {
+    color: var(--white-color);
+    font-family: var(--accent-font);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.seed__list {
+    width: 1110px;
+    padding-left: 405px;
+}
+
+.seed__item:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.seed__text {
+    color: var(--white-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

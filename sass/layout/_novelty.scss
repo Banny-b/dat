@@ -1,0 +1,145 @@
+.novelty {
+    width: 1920px;
+    background: var(--main-bg);
+    padding-bottom: 120px;
+}
+
+.novelty__wrapp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 49px;
+}
+
+.novelty__wrapp-img-l {
+    margin-top: 20px;
+    margin-right: 17px;
+}
+
+.novelty__wrapp-title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 17px;
+}
+
+.novelty__wrapp-img-r {
+    margin-top: 20px;
+}
+
+.novelty__content {
+    display: flex;
+    margin-bottom: 40px;
+    padding: 0 214px;
+}
+
+.novelty__arrow-l {
+    display: block;
+    margin-right: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.novelty__content-list {
+    display: flex;
+    margin-right: 80px;
+}
+
+.novelty__content-item {
+    width: 255px;
+    padding: 10px;
+    border-radius: 20px;
+    background: var(--white-color);
+    transition: box-shadow var(--function-transit);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &:hover {
+        box-shadow: var(--box-shadow-color);
+    }
+}
+
+.novelty__content-wrapp {
+    display: flex;
+    position: relative;
+}
+
+.novelty__content-wrapp-img-m {
+    padding: 21px 79px 0 79px;
+    margin-bottom: 32px;
+}
+
+.novelty__content-wrapp-img-s {
+    position: absolute;
+    top: 10px;
+    left: 225px; // *
+}
+
+.novelty__content-info {
+    border-radius: 20px;
+    background: var(--item-section-bg);
+    padding: 21px 20px;
+}
+
+.novelty__content-info-title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 3px;
+}
+
+.novelty__content-info-text {
+    color: var(--top-line-bg);
+    font-family: var(--accent-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.novelty__content-info-price {
+    display: flex;
+}
+
+.novelty__content-info-price-wrapp {
+    margin-right: 93px;
+}
+
+.novelty__content-info-price-cost {
+    color: var(--banner-btn-color);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1px;
+}
+
+.novelty__content-info-price-quantity {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.novelty__arrow-r {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.novelty__slider {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

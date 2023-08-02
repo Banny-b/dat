@@ -1,0 +1,113 @@
+.main {
+    position: relative;
+    background-image: url("../../img/hero/gardener-bg.jpg");
+    width: 1920px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero {
+    display: flex;
+    padding-top: 96px;
+}
+
+.hero__info {
+    width: 605px;
+    height: 262px;
+    margin-top: 95px;
+    margin-right: 106px;
+    padding-left: 517px; // ?
+}
+
+.hero__info-wrapp {
+    display: flex;
+}
+
+.hero__info-img {
+    display: block;
+    margin-top: 26px;
+    margin-right: 12px;
+}
+
+.hero__info-title {
+    display: block;
+    width: 513px;
+}
+
+.hero__info-title-acc {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero__info-title-lin {
+    @extend .hero__info-title-acc;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+
+.hero__info-text {
+    color: var(--text-color-title);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 23px;
+    margin-left: 44px;
+}
+
+.hero__info-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 47px;
+    color: var(--white-color);
+    background: var(--hover-btn);
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 90px;
+    border: none;
+    margin-left: 44px;
+    transition: background var(--function-transit);
+
+    &:hover {
+        background: var(--header-phone-border);
+    }
+}
+
+.hero__img {
+    background: var(--main-bg);
+    border-radius: 200px 0 0 0;
+}
+
+.hero__img-title {
+    width: 691px;
+    border-radius: 200px 0 230px 0;
+}
+
+.hero__img-leaf-1 {
+    position: absolute;
+    top: 590px;
+    left: 1074px;
+}
+
+.hero__img-leaf-2 {
+    position: absolute;
+    top: 690px;
+    left: 1103px;
+}
+
+.hero__img-leaf-3 {
+    position: absolute;
+    top: 139px;
+    left: 1677px;
+}

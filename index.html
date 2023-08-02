@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="./img/favicon/dat-32x32.ico" rel="shortcut icon"/>
+    <link type="Image/x-icon" href="./img/favicon/dat-32x32.ico" rel="icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>DAT</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!-- Top line -->
+    <div class="top-line">
+        <nav class="top-line__nav">
+            <ul class="top-line__nav-list list">
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Про нас</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Каталог продукції</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Оплата і доставка</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Партнери</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Новини</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="top-line__line"></span>
+        <div class="authorization">
+            <svg class="authorization__img" width="20" height="20">
+                <use href="./img/top-line/exit.svg#log-out"></use>
+            </svg>
+            <button class="authorization__btn-entry">Вхід</button>
+            <span class="authorization__line">|</span>
+            <button class="authorization__btn-registration">Реєстрація</button>
+        </div>
+    </div>
+    <!-- Header -->
+<section class="main">
+    <div class="main-blur"></div>
+    <header class="header">
+        <img src="./img/header/logo.png" alt="logo" class="header__logo">
+        <!-- Search -->
+        <label for="" class="header___input-wrapper">
+            <input class="header__input" type="text" placeholder="Пошук">
+            <span class="header__custom-content">
+            <span class="header__input-line">|</span>
+            <svg class="header__input-img" width="15" height="15">
+                <use href="./img/header/search.svg#icon-search"></use>
+            </svg>
+            </span>
+        </label>
+        <!-- Phone -->
+        <div class="header__phone-wrapper">
+            <svg class="header__phone-img" width="40" height="40">
+                <use href="./img/header/call.svg#icon-call"></use>
+            </svg>
+            <div class="header__phone-info">
+                <a class="header__phone-info-tel link" href="">+38 (067) 115 00 58</a>
+                <a class="header__phone-info-back link" href="">Замовити зворотній зв’язок</a>
+            </div>
+        </div>
+        <!-- Like -->
+        <ul class="like list">
+            <li class="like__item">
+                <svg class="like__item-img" width="43" height="40">
+                    <use href="./img/header/heart.svg#icon-heart"></use>
+                </svg>
+            </li>
+            <li class="like__item">
+                <svg class="like__item-img" width="40" height="40">
+                    <use href="./img/header/compare.svg#icon-compare"></use>
+                </svg>
+            </li>
+            <li class="like__item">
+                <svg class="like__item-img" width="40" height="40">
+                    <use href="./img/header/cart.svg#icon-cart"></use>
+                </svg>
+            </li>
+            <li class="like__item">
+                <p class="like__item-price">10,0 грн</p>
+            </li>
+        </ul>
+    </header>
+    <!-- Banner button -->
+    <div class="banner">
+        <button class="banner__btn">
+            <svg class="banner__btn-img" width="24" height="24"><use href="./img/banner/btn1.svg#icon-btn1"></use></svg>Насіння
+        </button>
+        <button class="banner__btn">
+            <svg class="banner__btn-img" width="24" height="24"><use href="./img/banner/btn2.svg#icon-btn2"></use></svg>Засоби захисту рослин
+        </button>
+        <button class="banner__btn">
+            <svg class="banner__btn-img" width="24" height="24"><use href="./img/banner/btn3.svg#icon-btn3"></use></svg>Добрива
+        </button>
+        <button class="banner__btn">
+            <svg class="banner__btn-img" width="24" height="24"><use href="./img/banner/btn4.svg#icon-btn4"></use></svg>Кормова група
+        </button>
+        <button class="banner__btn">
+            <svg class="banner__btn-img" width="24" height="24"><use href="./img/banner/btn5.svg#icon-btn5"></use></svg>Агроному в поміч
+        </button>
+    </div>
+    <section class="hero">
+        <div class="hero__info">
+            <div class="hero__info-wrapp">
+                <svg class="hero__info-img" width="32" height="25">
+                    <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                </svg>
+                <h1 class="hero__info-title">
+                    <span class="hero__info-title-acc">Аграрний</span> 
+                    <span class="hero__info-title-lin">інтернет-магазин</span>
+                </h1>
+            </div>
+            <p class="hero__info-text">Основна сфера діяльності – дистрибуція насіння, засобів захисту рослин, мінеральних макро - та мікродобрив.</p>
+            <button class="hero__info-btn">Про компанію</button>
+        </div>
+        <div class="hero__img">
+            <img class="hero__img-title" src="./img/hero/gardener-img.jpg" alt="gardener">
+            <img src="./img/hero/leaf-1.png" alt="leaf" class="hero__img-leaf-1">
+            <img src="./img/hero/leaf-2.png" alt="leaf" class="hero__img-leaf-2">
+            <img src="./img/hero/leaf-3.png" alt="leaf" class="hero__img-leaf-3">
+        </div>
+    </section>
+</section>
+    <!-- About -->
+    <section class="about">
+        <div class="about__img">
+            <img src="./img/about/seedling.png" alt="seedling" class="about__img-main">
+            <img src="./img/hero/leaf-1.png" alt="leaf" class="about__img-leaf-1">
+            <img src="./img/hero/leaf-2.png" alt="leaf" class="about__img-leaf-2">
+        </div>
+        <div class="about__info">
+            <div class="about__info-wrapp">
+                <svg class="about__info-leaf" width="32" height="25">
+                    <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                </svg>
+                <h2 class="about__info-title">Про нас</h2>
+            </div>
+            <ul class="about__info-list list">
+                <li class="about__info-text"><span class="about__info-text-acc">«Компанія ТОВ “ДАМАР АГРОТРЕЙД”</span> — молода команда, 
+                    яка з’явилась на аграрному ринку у 2020 році. Ми не боїмось труднощів і викликів. Тому навіть складний ковідний період, 
+                    світова пандемія не стали на заваді успішному старту.
+                </li>
+                <li class="about__info-text">Отже, <span class="about__info-text-acc">ми — сміливі, ми — драйвові</span>, ми — ті, що розвивають 
+                    рослинництво та допомагають ставати успішними тисячам вітчизняних аграріїв.
+                </li>
+                <li class="about__info-text"><span class="about__info-text-acc">Бачення</span>: компанія ТОВ “ДАМАР АГРОТРЕЙД” тримає курс 
+                    на підвищення престижності, довіри до засобів захисту рослин made in UA. Прагнемо, аби в кожному регіоні України наш споживач 
+                    мав доступ до якісної продукції та консалтингу від фахівців команди.
+                </li>
+                <li class="about__info-text"><span class="about__info-text-acc">Місія</span>: усе продуктове портфоліо, консультативні послуги ТОВ 
+                    “ДАМАР АГРОТРЕЙД” направлені на підвищення рентабельності рослинництва в мінливих кліматичних умовах України. Також ставимо 
+                    собі завдання підвищувати обізнаність клієнтів щодо сучасних методів ведення рослинництва.
+                </li>
+            </ul>
+            <button class="about__info-btn">Докладніше</button>
+        </div>
+    </section>
+    <!-- Novelty -->
+    <section class="novelty">
+        <div class="novelty__wrapp">
+            <svg class="novelty__wrapp-img-l" width="32" height="25">
+                <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+            </svg>
+            <h2 class="novelty__wrapp-title">Новинки</h2>
+            <svg class="novelty__wrapp-img-r" width="32" height="25">
+                <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+            </svg>
+        </div>
+        <div class="novelty__content">
+            <svg class="novelty__arrow-l" width="70" height="70">
+                <use href="./img/novelty/arrow-l.svg#icon-arrow-l"></use>
+            </svg>
+            <ul class="novelty__content-list list">
+                <li class="novelty__content-item">
+                    <div class="novelty__content-wrapp">
+                        <img src="./img/novelty/1.png" alt="novelty-photo" class="novelty__content-wrapp-img-m">
+                        <svg class="novelty__content-wrapp-img-s">
+                            <use href="./img/novelty/compare.svg#icon-compare"></use>
+                        </svg>
+                    </div>
+                    <div class="novelty__content-info">
+                        <h3 class="novelty__content-info-title">Петунія Софістика F1</h3>
+                        <p class="novelty__content-info-text">В наявності</p>
+                        <div class="novelty__content-info-price">
+                            <span class="novelty__content-info-price-wrapp">
+                                <h4 class="novelty__content-info-price-cost">20 грн</h4>
+                                <p class="novelty__content-info-price-quantity">1 шт</p>
+                            </span>
+                            <svg class="novelty__content-info-price-img" width="47" height="47">
+                                <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </li>
+                <li class="novelty__content-item">
+                    <div class="novelty__content-wrapp">
+                        <img src="./img/novelty/2.png" alt="novelty-photo" class="novelty__content-wrapp-img-m">
+                        <svg class="novelty__content-wrapp-img-s">
+                            <use href="./img/novelty/compare.svg#icon-compare"></use>
+                        </svg>
+                    </div>
+                    <div class="novelty__content-info">
+                        <h3 class="novelty__content-info-title">Скор 250 ЕС к.э.</h3>
+                        <p class="novelty__content-info-text">В наявності</p>
+                        <div class="novelty__content-info-price">
+                            <span class="novelty__content-info-price-wrapp">
+                                <h4 class="novelty__content-info-price-cost">150 грн</h4>
+                                <p class="novelty__content-info-price-quantity">1 шт</p>
+                            </span>
+                            <svg class="novelty__content-info-price-img" width="47" height="47">
+                                <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </li>
+                <li class="novelty__content-item">
+                    <div class="novelty__content-wrapp">
+                        <img src="./img/novelty/3.png" alt="novelty-photo" class="novelty__content-wrapp-img-m">
+                        <svg class="novelty__content-wrapp-img-s">
+                            <use href="./img/novelty/compare.svg#icon-compare"></use>
+                        </svg>
+                    </div>
+                    <div class="novelty__content-info">
+                        <h3 class="novelty__content-info-title">Січ 350 ЕС к.э.</h3>
+                        <p class="novelty__content-info-text">В наявності</p>
+                        <div class="novelty__content-info-price">
+                            <span class="novelty__content-info-price-wrapp">
+                                <h4 class="novelty__content-info-price-cost">300 грн</h4>
+                                <p class="novelty__content-info-price-quantity">1 шт</p>
+                            </span>
+                            <svg class="novelty__content-info-price-img" width="47" height="47">
+                                <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </li>
+                <li class="novelty__content-item">
+                    <div class="novelty__content-wrapp">
+                        <img src="./img/novelty/4.png" alt="novelty-photo" class="novelty__content-wrapp-img-m">
+                        <svg class="novelty__content-wrapp-img-s">
+                            <use href="./img/novelty/compare.svg#icon-compare"></use>
+                        </svg>
+                    </div>
+                    <div class="novelty__content-info">
+                        <h3 class="novelty__content-info-title">Хорус</h3>
+                        <p class="novelty__content-info-text">В наявності</p>
+                        <div class="novelty__content-info-price">
+                            <span class="novelty__content-info-price-wrapp">
+                                <h4 class="novelty__content-info-price-cost">25 грн</h4>
+                                <p class="novelty__content-info-price-quantity">1 шт</p>
+                            </span>
+                            <svg class="novelty__content-info-price-img" width="47" height="47">
+                                <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <svg class="novelty__arrow-r" width="70" height="70">
+                <use href="./img/novelty/arrow-r.svg#icon-arrow-r"></use>
+            </svg>
+        </div>
+        <svg class="novelty__slider" width="70" height="30">
+            <use href="./img/novelty/slider.svg#icon-slider"></use>
+        </svg>
+    </section>
+    <!-- Promotion -->
+    <section class="promotion">
+        <div class="promotion__wrapp">
+            <svg class="promotion__wrapp-img-l" width="32" height="25">
+                <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+            </svg>
+            <h2 class="promotion__wrapp-title">Акції</h2>
+            <svg class="promotion__wrapp-img-r" width="32" height="25">
+                <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+            </svg>
+        </div>
+        <div class="promotion__content">
+            <svg class="promotion__arrow-l" width="70" height="70">
+                <use href="./img/novelty/arrow-l.svg#icon-arrow-l"></use>
+            </svg>
+            <ul class="promotion__content-list list">
+                <li class="promotion__content-item">
+                    <div class="promotion__content-wrapp">
+                        <img src="./img/novelty/1.png" alt="promotion-photo" class="promotion__content-wrapp-img-m">
+                        <svg class="promotion__content-wrapp-img-s">
+                            <use href="./img/novelty/compare.svg#icon-compare"></use>
+                        </svg>
+                    </div>
+                    <div class="promotion__content-info">
+                        <h3 class="promotion__content-info-title">Петунія Софістика F1</h3>
+                        <p class="promotion__content-info-text">В наявності</p>
+                        <div class="promotion__content-info-price">
+                            <span class="promotion__content-info-price-wrapp">
+                                <h4 class="promotion__content-info-price-cost">10 грн</h4>
+                                <p class="promotion__content-info-price-quantity">1 шт</p>
+                            </span>
+                            <svg class="promotion__content-info-price-img" width="47" height="47">
+                                <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </li>
+                <li class="promotion__content-item">
+                    <div class="promotion__content-wrapp">
+                        <img src="./img/novelty/2.png" alt="promotion-photo" class="promotion__content-wrapp-img-m">
+                        <svg class="promotion__content-wrapp-img-s">
+                            <use href="./img/novelty/compare.svg#icon-compare"></use>
+                        </svg>
+                    </div>
+                    <div class="promotion__content-info">
+                        <h3 class="promotion__content-info-title">Скор 250 ЕС к.э.</h3>
+                        <p class="promotion__content-info-text">В наявності</p>
+                        <div class="promotion__content-info-price">
+                            <span class="promotion__content-info-price-wrapp">
+                                <h4 class="promotion__content-info-price-cost">75 грн</h4>
+                                <p class="promotion__content-info-price-quantity">1 шт</p>
+                            </span>
+                            <svg class="promotion__content-info-price-img" width="47" height="47">
+                                <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </li>
+                <li class="promotion__content-item">
+                    <div class="promotion__content-wrapp">
+                        <img src="./img/novelty/3.png" alt="promotion-photo" class="promotion__content-wrapp-img-m">
+                        <svg class="promotion__content-wrapp-img-s">
+                            <use href="./img/novelty/compare.svg#icon-compare"></use>
+                        </svg>
+                    </div>
+                    <div class="promotion__content-info">
+                        <h3 class="promotion__content-info-title">Січ 350 ЕС к.э.</h3>
+                        <p class="promotion__content-info-text">В наявності</p>
+                        <div class="promotion__content-info-price">
+                            <span class="promotion__content-info-price-wrapp">
+                                <h4 class="promotion__content-info-price-cost">150 грн</h4>
+                                <p class="promotion__content-info-price-quantity">1 шт</p>
+                            </span>
+                            <svg class="promotion__content-info-price-img" width="47" height="47">
+                                <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </li>
+                <li class="promotion__content-item">
+                    <div class="promotion__content-wrapp">
+                        <img src="./img/novelty/4.png" alt="promotion-photo" class="promotion__content-wrapp-img-m">
+                        <svg class="promotion__content-wrapp-img-s">
+                            <use href="./img/novelty/compare.svg#icon-compare"></use>
+                        </svg>
+                    </div>
+                    <div class="promotion__content-info">
+                        <h3 class="promotion__content-info-title">Хорус</h3>
+                        <p class="promotion__content-info-text">В наявності</p>
+                        <div class="promotion__content-info-price">
+                            <span class="promotion__content-info-price-wrapp">
+                                <h4 class="promotion__content-info-price-cost">14 грн</h4>
+                                <p class="promotion__content-info-price-quantity">1 шт</p>
+                            </span>
+                            <svg class="promotion__content-info-price-img" width="47" height="47">
+                                <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <svg class="promotion__arrow-r" width="70" height="70">
+                <use href="./img/novelty/arrow-r.svg#icon-arrow-r"></use>
+            </svg>
+        </div>
+        <svg class="promotion__slider" width="70" height="30">
+            <use href="./img/promotion/slider-2.svg#icon-slider-2"></use>
+        </svg>
+        <button class="promotion-btn">Дивитися усі товари</button>
+    </section>
+    <!-- Partner -->
+    <section class="partner">
+        <div class="partner__wrapp">
+            <svg class="partner__wrapp-img-l" width="32" height="25">
+                <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+            </svg>
+            <h2 class="partner__wrapp-title">Партнери</h2>
+            <svg class="partner__wrapp-img-r" width="32" height="25">
+                <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+            </svg>
+        </div>
+        <ul class="partner__list list">
+            <li class="partner__item">
+                <img src="./img/partner/01.png" alt="partner" class="partner__img">
+            </li>
+            <li class="partner__item">
+                <img src="./img/partner/02.png" alt="partner" class="partner__img">
+            </li>
+            <li class="partner__item">
+                <img src="./img/partner/03.png" alt="partner" class="partner__img">
+            </li>
+            <li class="partner__item">
+                <img src="./img/partner/04.png" alt="partner" class="partner__img">
+            </li>
+            <li class="partner__item">
+                <img src="./img/partner/05.png" alt="partner" class="partner__img">
+            </li>
+            <li class="partner__item">
+                <img src="./img/partner/06.png" alt="partner" class="partner__img">
+            </li>
+        </ul>
+        <svg class="partner__slider" width="70" height="30">
+            <use href="./img/novelty/slider.svg#icon-slider"></use>
+        </svg>
+        <svg class="partner__arrow-pag-l" width="70" height="70">
+            <use href="./img/partner/arrow-l-pag.svg#icon-arr-l-pag"></use>
+        </svg>
+        <svg class="partner__arrow-pag-r" width="70" height="70">
+            <use href="./img/partner/arrow-r-pag.svg#icon-arr-r-pag"></use>
+        </svg>
+    </section>
+    <!-- Seed -->
+    <section class="seed">
+        <div class="seed__wrapp">
+            <svg class="seed__wrapp-img-l" width="32" height="25">
+                <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+            </svg>
+            <h2 class="seed__wrapp-title">Насіння</h2>
+        </div>
+        <ul class="seed__list list">
+            <li class="seed__item">
+                <p class="seed__text">Вирощування овочів, квітів на своїй ділянці або просто на балконі - це улюблене 
+                    заняття багатьох дачників та городників. Звичайно, свіжі овочі з власного городу натуральні, смачні 
+                    та корисні. Але щоб отримати хороший урожай томату або капусти, насолоджуватися цвітінням петунії 
+                    або троянди, важливо не тільки правильно доглядати за рослинами. Все починається із вибору посівного 
+                    матеріалу. І тут постає питання: яке насіння вибрати? Адже вони мають бути якісними, давати гарну 
+                    схожість.
+                </p>
+            </li>
+            <li class="seed__item">
+                <p class="seed__text">Пропонуємо покупцям широкий вибір насіння овочів. У нас ви можете знайти насіння 
+                    баклажанів, різних видів капусти, бобових та баштанних культур, томату, перцю, огірків, цибулі, 
+                    салату, часнику, картоплі від вітчизняних та зарубіжних виробників.
+                </p>
+            </li>
+            <li class="seed__item">
+                <p class="seed__text">Також ви можете знайти в нашому каталозі насіння квітів: однорічних (петунія, левовий зів, 
+                    календула і т.д.), дворічних (віола, примула, мальва), багаторічних (іберис, анемона, гібіскус, дельфініум, 
+                    фрезія), цибулинних (тюльпани) , лілія, ірис, нарциси), кімнатних (гербера, бегонія, кактус, мімоза, 
+                    пасифлора). Звичайно, це далеко не весь список — кожна господиня знайде тут свою улюблену квітку.
+                </p>
+            </li>
+            <li class="seed__item">
+                <p class="seed__text">У широкому асортименті представлені саджанці плодових дерев, троянд, ягідних кущів. У нас 
+                    ви можете купити насіння газонної трави, а також супутні товари: добрива, засоби захисту, біопрепарати, 
+                    садовий інвентар, субстрати, ґрунти, агроволокно, горщики, касети для розсади.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content-logo">
+                <img src="./img/footer/logo-footer.png" alt="logo-footer" class="footer__content-logo-img">
+                <p class="footer__content-logo-text">Пропонуємо покупцям широкий вибір насіння, овочів та добрив.</p>
+            </div>
+            <div class="footer__content-info">
+                <h3 class="footer__content-info-title">Інформація</h3>
+                <ul class="footer__content-info-list list">
+                    <li class="footer__content-info-item">
+                        <a class="footer__content-info-item-link link" href="">Про компанію</a>
+                    </li>
+                    <li class="footer__content-info-item">
+                        <a class="footer__content-info-item-link link" href="">Оплата і доставка</a>
+                    </li>
+                    <li class="footer__content-info-item">
+                        <a class="footer__content-info-item-link link" href="">Партнери</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-product">
+                <h3 class="footer__content-product-title">Товари</h3>
+                <ul class="footer__content-product-list list">
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Каталог продукції</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Засоби захисту рослин</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Насіння</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Добрива</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Агроному в поміч</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-contact">
+                <h3 class="footer__content-contact-title">Контакти</h3>
+                <div class="footer__content-contact-sub1">
+                    <img src="./img/footer/phone.png" alt="phone" class="footer__content-contact-sub1-img" width="40" height="40">
+                    <div class="footer__content-contact-sub1-s2">
+                        <a class="footer__content-contact-sub1-s2-p link" href="">+38 (067) 115 00 58</a>
+                        <a class="footer__content-contact-sub1-s2-t link" href="">Замовити зворотній зв’язок</a>
+                    </div>
+                </div>
+                <div class="footer__content-contact-sub2">
+                    <img src="./img/footer/envelope.png" alt="envelope" class="footer__content-contact-sub2-img" width="40" height="40">
+                    <a class="footer__content-contact-sub2-m link" href="">dat@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <span class="footer-line"></span>
+        <p class="footer-license">© 2023 DAT</p>
+        <!-- Top button -->
+        <button class="top-btn" type="button">
+            <svg class="top-img" width="65" height="135">
+                <use href="./img/footer/top.svg#icon-top"></use>
+            </svg>
+        </button>
+    </footer>
+</body>
+</html>

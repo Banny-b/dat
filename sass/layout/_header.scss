@@ -1,0 +1,121 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 1920px;
+    padding: 20px 0;
+}
+
+.main-blur {
+    position: absolute;
+    top: -176px;
+    left: 1598px;
+    width: 580px;
+    height: 580px;
+    border-radius: 580px;
+    background: radial-gradient(50% 50.00% at 50% 50.00%, 
+    rgba(231, 78, 19, 0.10) 0%, 
+    rgba(231, 78, 19, 0.00) 100%);
+    filter: blur(30px);
+}
+
+.header__logo {
+    margin-right: 34px;
+    padding-left: 414px;
+}
+
+// Search
+.header__input-wrapper {
+    position: relative;
+}
+
+.header__input {
+    border-radius: 90px;
+    border: 1px solid var(--border-bg);
+    background: var(--white-color);
+    padding: 10px 35px 10px 20px;
+    margin-right: 70px;
+
+    &::placeholder {
+        color: var(--placeholder-color);
+        font-family: var(--accent-font);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.header__custom-content {
+    position: absolute;
+    left: 835px; // *
+    padding: 10px 5px;
+}
+
+.header__input-img {
+    vertical-align: middle;
+}
+
+// Phone
+.header__phone-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.header__phone-img {
+    margin-right: 6px;
+}
+
+.header__phone-info-tel {
+    display: block;
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: color var(--function-transit);
+
+    &:hover {
+        color: var(--banner-btn-color);
+    }
+}
+
+.header__phone-info-back {
+    display: block;
+    color: var(--banner-btn-color);
+    font-family: var(--accent-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    transition: color var(--function-transit);
+
+    &:hover {
+        color: var(--top-line-bg);
+    }
+}
+
+// Like
+.like {
+    display: flex;
+    align-items: center;
+    padding-right: 404px;
+}
+
+.like__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.like__item-price {
+    color: var(--black-color);
+    text-align: right;
+    font-family: var(--accent-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-variant: all-small-caps;
+    margin-left: 7px;
+}
