@@ -1,0 +1,152 @@
+.main__about-us {
+    position: relative;
+    width: 1920px;
+    background: var(--main-bg);
+    overflow: hidden;
+}
+
+// Subsection "About-us-1"
+.main__blur-up {
+    position: absolute;
+    top: -100px;
+    left: 1542px;
+    width: 713px;
+    height: 713px;
+    border-radius: 713px;
+    background: var(--blur-bg);
+    filter: blur(30px);
+}
+
+.about-us {
+    padding: 46px 0 90px 0;
+}
+
+.about-us__wrapp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+
+.about-us__img-l {
+    margin-top: 19px;
+    margin-right: 15px;
+}
+
+.about-us__title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 15px;
+}
+
+.about-us__img-r {
+    margin-top: 19px;
+}
+
+.about-us__list {
+    width: 1110px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about-us__item:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.about-us__text {
+    color: var(--text-color-title);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-us__text-wrapp {
+    color: var(--top-line-bg);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-us__subtitle {
+    color: var(--top-line-bg);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 405px;
+    margin-bottom: 16px;
+}
+
+.about-us__list-target {
+    width: 760px;
+    margin-bottom: 46px; // *
+    margin-left: 434px;
+}
+
+.about-us__item-target {
+    position: relative;
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    &::before {
+        content: "►";
+        position: absolute;
+        left: -25px;
+        color: var(--top-line-bg);
+        font-size: 10px;
+        padding-top: 3px;
+        padding-left: 10px;
+    }
+}
+
+.main__blur-down {
+    position: absolute;
+    top: 1089px;
+    right: 1534px;
+    width: 713px;
+    height: 713px;
+    border-radius: 713px;
+    background: var(--blur-bg);
+    filter: blur(30px);
+}
+
+// Subsection "About-us-2"
+.about-us__wrapp-3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+    padding-top: 23px;
+}
+
+.about-us-2__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-us-2__img {
+    margin-bottom: 15px;
+}
+
+.about-us-2__name {
+    color: var(--black-color);
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

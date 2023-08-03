@@ -12,9 +12,7 @@
     width: 580px;
     height: 580px;
     border-radius: 580px;
-    background: radial-gradient(50% 50.00% at 50% 50.00%, 
-    rgba(231, 78, 19, 0.10) 0%, 
-    rgba(231, 78, 19, 0.00) 100%);
+    background: var(--blur-bg);
     filter: blur(30px);
 }
 
@@ -77,13 +75,13 @@
     transition: color var(--function-transit);
 
     &:hover {
-        color: var(--banner-btn-color);
+        color: var(--bonner-btn-color);
     }
 }
 
 .header__phone-info-back {
     display: block;
-    color: var(--banner-btn-color);
+    color: var(--bonner-btn-color);
     font-family: var(--accent-font);
     font-size: 14px;
     font-style: normal;

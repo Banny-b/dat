@@ -3,7 +3,7 @@
 
 @import "./layout/top-line";
 @import "./layout/header";
-@import "./layout/banner";
+@import "./layout/bonner";
 @import "./layout/hero";
 @import "./layout/about";
 @import "./layout/novelty";
@@ -11,3 +11,5 @@
 @import "./layout/partner";
 @import "./layout/seed";
 @import "./layout/footer";
+
+@import "./layout/sublayout/about-us";
