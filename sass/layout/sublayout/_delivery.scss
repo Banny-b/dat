@@ -1,0 +1,364 @@
+.main__delivery {
+    position: relative;
+    width: 1920px;
+    background: var(--main-bg);
+    overflow: hidden;
+}
+
+.delivery {
+    //position: relative;
+    padding: 46px 0 100px 0;
+}
+
+.delivery__link-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.delivery__link {
+    color: var(--text-color-title);
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 30px;
+    transition: var(--function-transit);
+
+    &:hover {
+        color: var(--black-color);
+    }
+}
+
+.delivery__circle {
+    position: relative;
+}
+
+.delivery__circle::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 10px;;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--bonner-btn-color);
+}
+
+.delivery__text-link {
+    @extend .about-us__link;
+    font-weight: 700;
+    margin-right: 0;
+}
+
+.delivery__wrapp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+
+.delivery__img-l {
+    margin-top: 19px;
+    margin-right: 15px;
+}
+
+.delivery__title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 15px;
+}
+
+.delivery__img-r {
+    margin-top: 19px;
+}
+
+// Section pay
+.pay__title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 40px;
+    margin-bottom: 12px;
+    padding-left: 404px;
+}
+
+.pay__subtitle {
+    width: 1108px;
+    color: var(--top-line-bg);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 404px;
+    margin-bottom: 15px;
+}
+
+.pay__list {
+    width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+    padding-left: 40px;
+}
+
+.pay__item {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+}
+
+.pay__item-text {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pay-2 {
+    margin-bottom: 44px
+}
+
+.pay-2__subtitle {
+    @extend .pay__subtitle;
+}
+
+.pay-2__list {
+    width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 14px;
+    padding-left: 40px;
+}
+
+.pay-2__item {
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+    @extend .pay__item-text;
+}
+
+.pay-2__text {
+    width: 1110px;
+    padding-left: 424px;
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+    @extend .pay__item-text;
+}
+
+.pay-3 {
+    margin-bottom: 69px;
+}
+
+.pay-3__title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 7px;
+    padding-left: 404px;
+}
+
+.pay-3__title-link {
+    color: var(--top-line-bg);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    transition: var(--function-transit);
+
+    &:hover {
+        color: var(--bonner-btn-color);
+    }
+}
+
+.pay-3__list {
+    width: 192px;
+    margin-bottom: 16px;
+    padding-left: 424px;
+}
+
+.pay-3__item {
+    @extend .pay__item-text;
+}
+
+.pay-3__text {
+    width: 1110px;
+    padding-left: 404px;
+    @extend .pay__item-text;
+}
+
+.main-blur-midd-1 {
+    position: absolute;
+    top: 500px;
+    right: 1560px;
+    width: 1068px;
+    height: 1068px;
+    border-radius: 1068px;
+    background: var(--blur-bg-green);
+    filter: blur(30px);
+}
+
+// Section transport
+.transport__title {
+    @extend .pay__title;
+}
+
+.transport__ukr {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 37px;
+}
+
+.subtransport__ukr {
+    width: 541px;
+    margin-right: 28px;
+}
+
+.subtransport__ukr-title {
+    color: var(--top-line-bg);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+
+.subtransport__ukr-item {
+    &:not(:last-child) {
+        margin-bottom: 14px
+    }
+    @extend .pay__item-text;
+}
+
+.note {
+    font-weight: 700;
+}
+
+.transport__nova {
+    @extend .transport__ukr;
+}
+
+.subtransport__nova-logo {
+    margin-right: 28px;
+}
+
+.subtransport__nova {
+    margin-top: auto;
+    margin-bottom: auto;
+    @extend .subtransport__ukr;
+}
+
+.subtransport__nova-title {
+    @extend .subtransport__ukr-title;
+}
+
+.subtransport__nova-item {
+    @extend .subtransport__ukr-item;
+}
+
+.transport__meest {
+    @extend .transport__ukr;
+}
+
+.subtransport__meest {
+    @extend .subtransport__nova;
+}
+
+.subtransport__meest-title {
+    @extend .subtransport__ukr-title;
+}
+
+.subtransport__meest-item {
+    @extend .subtransport__ukr-item;
+}
+
+.subtransport__meest-logo {
+    width: 540px;
+    height: 360px;
+}
+
+.main-blur-midd-2 {
+    position: absolute;
+    top: 1500px;
+    left: 1542px;
+    width: 1060px;
+    height: 1060px;
+    border-radius: 1060px;
+    background: var(--blur-bg-red);
+    filter: blur(30px);
+}
+
+// Section pickup
+.pickup__title {
+    @extend .pay__title;
+}
+
+.pickup__subtitle {
+    @extend .pay__subtitle;
+}
+
+.pickup__address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    padding-left: 402px;
+}
+
+.pickup__address-img, .pickup__clock-img {
+    margin-right: 10px;
+}
+
+.pickup__address-text, .pickup__clock-text {
+    @extend .pay__item-text;
+}
+
+.pickup__clock {
+    @extend .pickup__address;
+    margin-bottom: 19px;
+}
+
+.pickup__list {
+    width: 1110px;
+    padding-left: 404px;
+}
+
+.pickup__list-item {
+    @extend .subtransport__ukr-item;
+}
+
+.main__blur-down-deliv {
+    position: absolute;
+    top: 2500px;
+    right: 1560px;
+    width: 1068px;
+    height: 1068px;
+    border-radius: 1068px;
+    background: var(--blur-bg-green);
+    filter: blur(30px);
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="./img/favicon/dat-32x32.ico" rel="shortcut icon"/>
+    <link type="Image/x-icon" href="./img/favicon/dat-32x32.ico" rel="icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>DAT</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!-- Top line -->
+    <div class="top-line">
+        <nav class="top-line__nav">
+            <ul class="top-line__nav-list list">
+                <li class="top-line__nav-item">
+                    <a href="./about-us.html" class="top-line__nav-link link">Про нас</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Каталог продукції</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Оплата і доставка</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Партнери</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Новини</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="top-line__line"></span>
+        <div class="authorization">
+            <svg class="authorization__img" width="20" height="20">
+                <use href="./img/top-line/exit.svg#log-out"></use>
+            </svg>
+            <button class="authorization__btn-entry">Вхід</button>
+            <span class="authorization__line">|</span>
+            <button class="authorization__btn-registration">Реєстрація</button>
+        </div>
+    </div>
+    <!-- Header -->
+    <section class="main__delivery">
+        <div class="main__blur-up"></div>
+        <header class="header">
+            <a href="./index.html" class="header__logo-link link">
+                <img src="./img/header/logo.png" alt="logo" class="header__logo">
+            </a>
+            <!-- Search -->
+            <label for="" class="header___input-wrapper">
+                <input class="header__input" type="text" placeholder="Пошук">
+                <span class="header__custom-content">
+                <span class="header__input-line">|</span>
+                <svg class="header__input-img" width="15" height="15">
+                    <use href="./img/header/search.svg#icon-search"></use>
+                </svg>
+                </span>
+            </label>
+            <!-- Phone -->
+            <div class="header__phone-wrapper">
+                <svg class="header__phone-img" width="40" height="40">
+                    <use href="./img/header/call.svg#icon-call"></use>
+                </svg>
+                <div class="header__phone-info">
+                    <a class="header__phone-info-tel link" href="">+38 (067) 115 00 58</a>
+                    <a class="header__phone-info-back link" href="">Замовити зворотній зв’язок</a>
+                </div>
+            </div>
+            <!-- Like -->
+            <ul class="like list">
+                <li class="like__item">
+                    <svg class="like__item-img" width="43" height="40">
+                        <use href="./img/header/heart.svg#icon-heart"></use>
+                    </svg>
+                </li>
+                <li class="like__item">
+                    <svg class="like__item-img" width="40" height="40">
+                        <use href="./img/header/compare.svg#icon-compare"></use>
+                    </svg>
+                </li>
+                <li class="like__item">
+                    <svg class="like__item-img" width="40" height="40">
+                        <use href="./img/header/cart.svg#icon-cart"></use>
+                    </svg>
+                </li>
+                <li class="like__item">
+                    <p class="like__item-price">10,0 грн</p>
+                </li>
+            </ul>
+        </header>
+        <!-- Bonner button -->
+        <div class="bonner">
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn1.svg#icon-btn1"></use></svg>Насіння
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn2.svg#icon-btn2"></use></svg>Засоби захисту рослин
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn3.svg#icon-btn3"></use></svg>Добрива
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn4.svg#icon-btn4"></use></svg>Кормова група
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn5.svg#icon-btn5"></use></svg>Агроному в поміч
+            </button>
+        </div>
+        <!-- Pay & Delivery -->
+        <section class="delivery">
+            <div class="delivery__link-cont">
+                <a href="./index.html" class="delivery__link link">Головна</a>
+                <div class="delivery__circle"></div>
+                <p class="delivery__text-link">Оплата і доставка</p>
+            </div>
+            <div class="delivery__wrapp">
+                <svg class="delivery__img-l" width="32" height="25">
+                    <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                </svg>
+                <h1 class="delivery__title">Оплата і доставка</h1>
+                <svg class="delivery__img-r" width="32" height="25">
+                    <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+                </svg>
+            </div>
+            <!-- Pay -->
+            <div class="pay">
+                <h2 class="pay__title">Оплата</h2>
+                <p class="pay__subtitle">Мінімальне замовлення насіння або будь-яких інших товарів в нашому магазині 
+                    становить 200 гривень.
+                </p>
+                <ul class="pay__list">
+                    <li class="pay__item">На розрахунковий рахунок в «ПриватБанк»
+                        <p class="pay__item-text">У будь-якому відділенні банку Ви можете здійснити платіж на розрахунковий рахунок 
+                            або через термінал ПриватБанк, або програму Приват24. Вартість послуг банку (комісія) оплачується 
+                            окремо, згідно тарифів обраного Вами банку.
+                        </p>
+                    </li>
+                    <li class="pay__item">Післяплатою через «Укрпошта Експрес» (оплата при отриманні посилки)
+                        <p class="pay__item-text">Замовлення оплачується при його отриманні у відділенні. Комісія при 
+                            перерахуванні оплати за замовлення вартістю до 500 грн складає 10 грн, понад 500 грн - 2%. 
+                            Комісія НЕ буде додана в рахунок і оплачується при отриманні посилки.
+                        </p>
+                    </li>
+                    <li class="pay__item">Післяплатою через компанію «Нова пошта» (оплата при отриманні відправлення)
+                        <p class="pay__item-text">Замовлення оплачується при його отриманні у відділенні. Комісія за перерахування 
+                            грошових коштів - 2,5%, але не менш ніж 10 грн від суми замовлення. Коміссія сплачується при 
+                            отриманні посилки.
+                        </p>
+                    </li>
+                    <li class="pay__item">Оплата онлайн «Meest Express»
+                        <p class="pay__item-text">Онлайн на сайті ua.meest.com через сервіс ПриватБанк або portmone.com використовуючи 
+                            функцію "Оплата онлайн".
+                        </p>
+                    </li>
+                    <li class="pay__item">Готівкою при самовивозі
+                        <p class="pay__item-text">
+                            Замовлення оплачується готівкою при отриманні на нашому офісі, розташованому за адресою м. Краматорськ, 
+                            вул. Богдана Хмельницького, 7, магазин "Огородник" (УкрНасіння).
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="pay-2">
+                <p class="pay-2__subtitle">При виборі оплати післяплатою, враховуйте:</p>
+                <ul class="pay-2__list">
+                    <li class="pay-2__item">товари з позначкою «НА ЗАМОВЛЕННЯ» і «ПЕРЕДОПЛАТА» цим способом не відправляються;</li>
+                    <li class="pay-2__item">поки оплата за перше замовлення не буде отримана, наступне замовлення клієнтові не висилається. 
+                        Компанія залишає за собою право на зміну ціни у разі коливання курсу валют. Замовлення насіння та ін. товару через 
+                        інтернет обробляється до 3-х днів, в сезон, в зв'язку зі збільшенням кількості замовлень, термін обробки може бути 
+                        збільшений. Можлива відсутність деяких товарів на складі, в рахунок-фактуру вони не включаються, без узгодження з 
+                        покупцем іншими не замінюються. Після обробки та формування замовлення насіння через інтернет, на зазначений 
+                        клієнтом e-mail і в його кабінет направляється рахунок-фактура. Якщо протягом 3-х днів після оформлення замовлення 
+                        насіння на адресу Вашої електронної пошти не прийшов рахунок, будь ласка, повідомте про це оператора. Будь ласка, 
+                        додайте наш e-mail shop@ukrsemena.com в свою адресну книгу, таким чином, рахунок-фактура не потрапить в спам. 
+                        У рахунку-фактурі будуть вказані реквізити для здійснення оплати згідно обраного способу. Список товару при 
+                        стані замовлення «Виставлено рахунок» в кабінеті клієнта повністю збігається з рахунком-фактурою. Виписаний 
+                        товар резервується на 3 робочих дні, протягом яких клієнтові необхідно здійснити оплату (якщо обрана передоплата).
+                    </li>
+                </ul>
+                <p class="pay-2__text">Всі необхідні реквізити платежу вказані в рахунку-фактурі.</p>
+                <p class="pay-2__text">Передоплата здійснюється тільки після отримання рахунку-фактури. Рахунок необхідно оплатити протягом 
+                    3-х банківських днів. При здійсненні платежу комісія не входить у вартість замовлення і доставки, оплачується покупцем 
+                    окремо. Якщо Вам у відділенні банку відмовляють у проведенні платежу, зв'яжіться з Контакт-центром і повідомте про 
+                    порушення, вказавши прізвище та посаду відповідального співробітника банку.
+                </p>
+            </div>
+            <div class="pay-3">
+                <p class="pay-3__title">Після оплати замовлення надішліть листа на <a href="" class="pay-3__title-link">shop@ukrsemena.com</a> 
+                    або зв'яжіться з <a href="" class="pay-3__title-link">Контакт-центром</a> і повідомте:
+                </p>
+                <ul class="pay-3__list">
+                    <li class="pay-3__item">П.І.Б.;</li>
+                    <li class="pay-3__item">номер замовлення;</li>
+                    <li class="pay-3__item">оплачену суму;</li>
+                    <li class="pay-3__item">дату платежу.</li>
+                </ul>
+                <p class="pay-3__text">Це прискорить відправку замовлення. Якщо Ви збираєтеся сплатити прострочений рахунок, обов'язково 
+                    зв'яжіться з менеджером для уточнення наявності товару.
+                </p>
+            </div>
+            <div class="main-blur-midd-1"></div>
+            <!-- Transport -->
+            <div class="transport">
+                <h2 class="transport__title">Доставка</h2>
+                <div class="transport__ukr">
+                    <div class="subtransport__ukr">
+                        <h3 class="subtransport__ukr-title">Доставка «Укрпошта Експрес»</h3>
+                        <ul class="subtransport__ukr-list list">
+                            <li class="subtransport__ukr-item">Доставку насіння поштою по Україні можна замовити як післяплатою, так і за 
+                                передоплатою. Замовлення надходить на поштове відділення, вказане клієнтом. Максимальна вага посилки до 
+                                10 кг. Тривалість доставки насіння поштою по Україні - не більше 5 днів.
+                            </li>
+                            <li class="subtransport__ukr-item note">Вартість доставки розраховується згідно тарифів «Укрпошта Експрес», НЕ ВХОДИТЬ 
+                                в рахунок замовлення і оплачується при отриманні посилки.
+                            </li>
+                            <li class="subtransport__ukr-item">Увага! Термін безкоштовного зберігання посилок в відділеннях ПАТ «Укрпошта» 
+                                становить 5 робочих днів з моменту прибуття. Починаючи з 6 дня зберігання посилка повертається до відправника. 
+                                Прохання своєчасно звертатися до відділень ПАТ «Укрпошта» для отримання замовлень.
+                            </li>
+                            <li class="subtransport__ukr-item">У зв'язку з термінами доставки коливання по вазі посадкового матеріалу можуть 
+                                становити ± 8%.
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="./img/delivery/ukr.png" alt="ukrposhta" class="subtransport__ukr-logo">
+                </div>
+                <div class="transport__nova">
+                    <img src="./img/delivery/nova.png" alt="nova-poshta" class="subtransport__nova-logo">
+                    <div class="subtransport__nova">
+                        <h3 class="subtransport__nova-title">Доставка компанією «Нова пошта»</h3>
+                        <ul class="subtransport__nova-list list">
+                            <li class="subtransport__nova-item">Отримання замовлення відбувається в філіях компаній. Оплату за доставку здійснює 
+                                клієнт. Можлива доставка за адресою клієнта за додаткову плату. Тривалість доставки компанією "Нова пошта" не 
+                                більше 3 днів.
+                            </li>
+                            <li class="subtransport__nova-item note">Вартість доставки розраховується згідно тарифів транспортних компаній, НЕ ВХОДИТЬ 
+                                в рахунок замовлення і оплачується при отриманні посилки.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="transport__meest">
+                    <div class="subtransport__meest">
+                        <h3 class="subtransport__meest-title">Доставка компанією «Meest-Express»</h3>
+                        <ul class="subtransport__meest-list list">
+                            <li class="subtransport__meest-item">Очікуйте SMS-повідомлення про наявність посилки у відділенні, або очікуйте повідомлення 
+                                з контактами кур'єра та часом прибуття на адресу. Завантажте мобільний додаток Meest. Очікуйте повідомлення про прибуття 
+                                посилки у поштомат.
+                            </li>
+                            <li class="subtransport__meest-item note">Вартість доставки розраховується згідно тарифів транспортних компаній, НЕ ВХОДИТЬ 
+                                в рахунок замовлення і оплачується при отриманні посилки.
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="./img/delivery/meest.png" alt="meest-express" class="subtransport__meest-logo">
+                </div>
+                <div class="main-blur-midd-2"></div>
+                <!-- Pickup -->
+                <div class="pickup">
+                    <h2 class="pickup__title">Самовивіз</h2>
+                    <p class="pickup__subtitle">Отримати і сплатити посилку клієнт може в нашому офісі за адресою:</p>
+                    <div class="pickup__address">
+                        <svg class="pickup__address-img" width="20" height="20">
+                            <use href="./img/delivery/map.svg#icon-map"></use>
+                        </svg>
+                        <p class="pickup__address-text">м. Краматорськ, вул. Богдана Хмельницького, 7, інтернет-магазин "УкрНасіння" (магазин Огородник)</p>
+                    </div>
+                    <div class="pickup__clock">
+                        <svg class="pickup__clock-img" width="20" height="20">
+                            <use href="./img/delivery/clock.svg#icon-clock"></use>
+                        </svg>
+                        <p class="pickup__clock-text">Графік видачі посилок: понеділок - п'ятниця з 9.00 до 18.00, перерва 12.30-13.30</p>
+                    </div>
+                    <ul class="pickup__list list">
+                        <li class="pickup__list-item note">Замовлення на непідконтрольні Україні території не відправляються. Приносимо свої вибачення!</li>
+                        <li class="pickup__list-item">Після відправки замовлення клієнту повідомляють на e-mail і по телефону номер товарно-транспортної 
+                            накладної (декларації) і орієнтовну дату прибуття. Для отримання посилки необхідно мати з собою паспорт (якщо клієнт отримує 
+                            посилку особисто) або довіреність (якщо Ви представляєте інтереси одержувача). При замовленні насіння поштою в інтернет-магазині 
+                            з України, на поштове відділення клієнта приходить посилка з замовленням. Працівники пошти/транспортної компанії повинні 
+                            направити йому оповіщення і/або SMS-повідомлення про отримання посилки, тому потрібно стежити за своєю поштовою скринькою. 
+                            Дуже часто повідомлення губляться, тому виходячи з орієнтовної дати прибуття посилки, поцікавтеся на пошті про посилку самостійно. 
+                            Її необхідно отримати протягом 5 днів з дня прибуття, після чого посилка повертається назад в інтернет-магазин.
+                        </li>
+                        <li class="pickup__list-item note">Якщо клієнт вчасно не забирає зі свого поштового відділення посилку, інтернет-магазин "УкрНасіння" 
+                            не несе відповідальність за його бездіяльність або бездіяльність працівників поштового відділення і повторно посилку не висилає. 
+                            Такі клієнти заносяться в чорний список і з цього моменту можуть отримувати товар тільки після повної передоплати.
+                        </li>
+                        <li class="pickup__list-item note">Це відноситься і до доставки насіння післяплатою компанією «Нова пошта».</li>
+                        <li class="pickup__list-item">При отриманні замовлення з насінням та ін. товарами ретельно огляньте посилку на предмет цілісності упаковки. 
+                            У разі порушення цілісності упаковки та/або відсутності частини замовлення і/або псування товару, в присутності працівника транспортної 
+                            компанії або ПАТ «Укрпошта» проведіть огляд вмісту посилки, звірте його з вкладеною видатковою накладною на товар, завіреною підписом 
+                            співробітника інтернет-магазину "УкрНасіння". При необхідності складіть «Акт про огляд», в якому необхідно відобразити стан упаковки і 
+                            товару, характер пошкоджень. Після складання Акту клієнт повинен негайно зв'язатися з Контакт-центром інтернет-магазину "УкрНасіння" і 
+                            надати копію акта про огляд товару. Якщо працівники служби доставки відмовляють Вам у проведенні огляду і складанні Акту, клієнт має 
+                            право не підписувати товарно-транспортні документи і не забирати замовлення. Наявність підпису вантажоодержувача в супровідній накладній 
+                            означає, що товар отриманий і претензій до продавця і компанії, що здійснила доставку насіння та ін. товарів немає.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="main__blur-down-deliv"></div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content-logo">
+                <img src="./img/footer/logo-footer.png" alt="logo-footer" class="footer__content-logo-img">
+                <p class="footer__content-logo-text">Пропонуємо покупцям широкий вибір насіння, овочів та добрив.</p>
+            </div>
+            <div class="footer__content-info">
+                <h3 class="footer__content-info-title">Інформація</h3>
+                <ul class="footer__content-info-list list">
+                    <li class="footer__content-info-item">
+                        <a class="footer__content-info-item-link link" href="">Про компанію</a>
+                    </li>
+                    <li class="footer__content-info-item">
+                        <a class="footer__content-info-item-link link" href="">Оплата і доставка</a>
+                    </li>
+                    <li class="footer__content-info-item">
+                        <a class="footer__content-info-item-link link" href="">Партнери</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-product">
+                <h3 class="footer__content-product-title">Товари</h3>
+                <ul class="footer__content-product-list list">
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Каталог продукції</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Засоби захисту рослин</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Насіння</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Добрива</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Агроному в поміч</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-contact">
+                <h3 class="footer__content-contact-title">Контакти</h3>
+                <div class="footer__content-contact-sub1">
+                    <img src="./img/footer/phone.png" alt="phone" class="footer__content-contact-sub1-img" width="40" height="40">
+                    <div class="footer__content-contact-sub1-s2">
+                        <a class="footer__content-contact-sub1-s2-p link" href="">+38 (067) 115 00 58</a>
+                        <a class="footer__content-contact-sub1-s2-t link" href="">Замовити зворотній зв’язок</a>
+                    </div>
+                </div>
+                <div class="footer__content-contact-sub2">
+                    <img src="./img/footer/envelope.png" alt="envelope" class="footer__content-contact-sub2-img" width="40" height="40">
+                    <a class="footer__content-contact-sub2-m link" href="">dat@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <span class="footer-line"></span>
+        <p class="footer-license">© 2023 DAT</p>
+        <!-- Top button -->
+        <button class="top-btn" type="button">
+            <svg class="top-img" width="65" height="135">
+                <use href="./img/footer/top.svg#icon-top"></use>
+            </svg>
+        </button>
+    </footer>
+    <script src="./js/scrollToTop.js"></script>
+</body>
+</html>
