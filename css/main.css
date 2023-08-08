@@ -1534,4 +1534,62 @@ button {
   border-radius: 1068px;
   background: var(--blur-bg-green);
   filter: blur(30px);
+}
+
+.main__partner-about {
+  position: relative;
+  width: 1920px;
+  background: var(--main-bg);
+  overflow: hidden;
+}
+
+.partner-about {
+  padding: 46px 404px 100px 404px;
+}
+
+.partner-about__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.partner-about__item-wrapp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.partner-about__img {
+  margin-right: 20px;
+}
+
+.partner-about__title {
+  color: var(--black-color);
+  font-family: var(--accent-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 236px;
+}
+
+.partner-about__text {
+  color: var(--text-color-title);
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 538px;
+}
+
+.partner-about__blur-down {
+  position: absolute;
+  top: 709px;
+  right: 1534px;
+  width: 713px;
+  height: 713px;
+  border-radius: 713px;
+  background: var(--blur-bg-red);
+  filter: blur(30px);
 }/*# sourceMappingURL=main.css.map */
