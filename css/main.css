@@ -1088,6 +1088,10 @@ button {
   background: none;
 }
 
+.top-img:hover {
+  transform: scale(1.02);
+}
+
 .main__about-us {
   position: relative;
   width: 1920px;
