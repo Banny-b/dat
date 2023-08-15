@@ -1,0 +1,86 @@
+.birds {
+    padding: 46px 0 0 0;
+}
+
+.birds__link-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.birds__link {
+    color: var(--text-color-title);
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 30px;
+    transition: var(--function-transit);
+
+    &:hover {
+        color: var(--black-color);
+    }
+}
+
+.birds__circle {
+    position: relative;
+}
+
+.birds__circle::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 10px;;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--bonner-btn-color);
+}
+
+.birds__text {
+    color: var(--text-color-title);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.birds__wrapp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+
+.birds__img-l {
+    margin-top: 19px;
+    margin-right: 15px;
+}
+
+.birds__title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 15px;
+}
+
+.birds__img-r {
+    margin-top: 19px;
+}
+
+// Birds
+.birds-about {
+    width: 1920px;
+    height: 240px; // *
+    background-image: linear-gradient(rgba(30, 30, 37, 0.4), rgba(30, 30, 37, 0.4)), 
+    url("../img/birds/birds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 108px 0;
+}

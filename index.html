@@ -21,8 +21,16 @@
                     <a href="./about-us.html" class="top-line__nav-link link">Про нас</a>
                 </li>
                 <li class="top-line__nav-item">
-                    <a href="" class="top-line__nav-link link">Каталог продукції</a>
-                </li>
+                    <div class="select-wrapper">
+                        <a href="#" class="top-line__nav-link selec link" id="catalog">Каталог продукції</a>
+                        <select class="hidden-select">
+                            <option value="plants" class="top-line__nav-option">Засоби захисту рослин</option>
+                            <option value="animals" class="top-line__nav-option">Для тварин</option>
+                            <option value="birds" class="top-line__nav-option">Для птиці</option>
+                            <option value="fish" class="top-line__nav-option">Для риби</option>
+                        </select>
+                    </div>
+                </li>                
                 <li class="top-line__nav-item">
                     <a href="./delivery.html" class="top-line__nav-link link">Оплата і доставка</a>
                 </li>
@@ -30,10 +38,10 @@
                     <a href="./partner-about.html" class="top-line__nav-link link">Партнери</a>
                 </li>
                 <li class="top-line__nav-item">
-                    <a href="" class="top-line__nav-link link">Новини</a>
+                    <a href="./news.html" class="top-line__nav-link link">Новини</a>
                 </li>
                 <li class="top-line__nav-item">
-                    <a href="" class="top-line__nav-link link">Контакти</a>
+                    <a href="./contacts.html" class="top-line__nav-link link">Контакти</a>
                 </li>
             </ul>
         </nav>
@@ -135,7 +143,6 @@
             <img src="./img/hero/leaf-3.png" alt="leaf" class="hero__img-leaf-3">
         </div>
     </section>
-</section>
     <!-- About -->
     <section class="about">
         <div class="about__img">
@@ -151,7 +158,7 @@
                 <h2 class="about__info-title">Про нас</h2>
             </div>
             <ul class="about__info-list list">
-                <li class="about__info-text"><span class="about__info-text-acc">«Компанія ТОВ “ДАМАР АГРОТРЕЙД”</span> — молода команда, 
+                <li class="about__info-text"><span class="about__info-text-acc">Компанія ТОВ “ДАМАР АГРОТРЕЙД”</span> — молода команда, 
                     яка з’явилась на аграрному ринку у 2020 році. Ми не боїмось труднощів і викликів. Тому навіть складний ковідний період, 
                     світова пандемія не стали на заваді успішному старту.
                 </li>
@@ -469,6 +476,7 @@
             </li>
         </ul>
     </section>
+</section>
     <!-- Footer -->
     <footer class="footer">
         <div class="footer__content">
@@ -534,6 +542,7 @@
             </svg>
         </button>
     </footer>
+    <script src="./js/topLineSelect.js"></script>
     <script src="./js/scrollToTop.js"></script>
 </body>
 </html>

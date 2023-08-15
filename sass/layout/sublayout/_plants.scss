@@ -1,0 +1,410 @@
+.plants {
+    padding: 46px 0 0 0;
+}
+
+.plants__link-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.plants__link {
+    color: var(--text-color-title);
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 30px;
+    transition: var(--function-transit);
+
+    &:hover {
+        color: var(--black-color);
+    }
+}
+
+.plants__circle {
+    position: relative;
+}
+
+.plants__circle::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 10px;;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--bonner-btn-color);
+}
+
+.plants__text {
+    color: var(--text-color-title);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.plants__wrapp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+
+.plants__img-l {
+    margin-top: 19px;
+    margin-right: 15px;
+}
+
+.plants__title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 15px;
+}
+
+.plants__img-r {
+    margin-top: 19px;
+}
+
+.plants-conain {
+    display: flex; // *
+    margin-bottom: 47px;
+}
+
+// Side bar (box-up)
+.plants-conain__sidebar {
+    margin-right: 30px;
+    padding-left: 384px; // *
+}
+
+.plants-conain__sidebar-info {
+    color: var(--text-color-title);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.plants-conain__sidebar-wrapp-up {
+    display: flex;
+    width: 195px; // *
+    border-radius: 20px;
+    background: var(--white-color);
+    box-shadow: var(--box-shadow-color-3);
+    margin-bottom: 30px;
+    padding: 26px 30px;
+}
+
+.plants-conain__sidebar-item-up:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.plants-conain__sidebar-link-up {
+    
+    &:hover {
+        color: var(--black-color)
+    }
+    @extend .plants-conain__sidebar-info;
+    transition: var(--function-transit);
+}
+
+.plants-conain__sidebar-list-up-num {
+    margin-left: auto;
+}
+
+.plants-conain__sidebar-item-up-num {
+    color: var(--hover-btn);
+    font-family: var(--accent-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 6px;
+    // text-align: right;
+
+    &:not(:last-child) {
+        margin-bottom: 18px;
+    }
+}
+
+// Side bar (box-down) 
+.plants-contain__sidebar-down-wrapp {
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.15));
+}
+
+.plants-contain__sidebar-box-down {
+    width: 195px; // *
+    border-radius: 0 0 20px 20px;
+    padding: 17px 30px 30px 30px;
+    background: var(--white-color);
+    
+}
+
+.plants-contain__sidebar-down-title {
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 256px;
+    background: var(--bonner-btn-color);
+    border-radius: 20px 20px 0px 0px;
+    padding: 15px 0;
+}
+
+.plants-contain__sidebar-down-subtitle {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 13px;
+}
+
+// Custom checkbox
+.plants-contain__sidebar-wrapp-down {
+    display: flex; // *
+    align-items: center; // *
+
+    &:not(:last-child) {
+        margin-bottom: 19px;
+    }
+
+    // &:last-child {
+    //     margin-bottom: 23px;
+    // }
+}
+
+.plants-contain__sidebar-custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; /* Hiding the original checkbox */
+}
+
+.plants-contain__sidebar-custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    position: relative;
+    padding-left: 25px; /* padding-left for label */
+}
+
+.plants-contain__sidebar-custom-checkbox+label::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid var(--border-checkbox);
+    margin-right: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.plants-contain__sidebar-custom-checkbox:checked+label::after {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: var(--checkbox-color);
+    border-radius: 3px;
+    position: absolute;
+    left: 4px; /* The position of the square inside the checkbox */
+    top: 4px; /* The position of the square inside the checkbox */
+}
+
+.plants-contain__sidebar-label {
+    color: var(--text-color-title);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.plants-contain__sidebar-box-line {
+    display: block;
+    width: 195px; // *
+    height: 1px;
+    background: var(--sidebar-line);
+    margin-bottom: 16px;
+}
+
+// Product
+.plants-contain__rating-selec {
+    color: var(--placeholder-color);
+    font-family: var(--accent-font);
+    font-size: 14px;
+    width: 132px;
+    border-radius: 20px;
+    border: 1px solid var(--border-bg);
+    background: transparent;
+    margin-bottom: 10px;
+    margin-left: 748px;
+    padding: 3px 10px;
+}
+
+.plants-contain__rating-opt {
+    color: var(--placeholder-color);
+    font-family: var(--accent-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.plants__content-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.plants__content-item {
+    width: 255px;
+    padding: 10px;
+    border-radius: 20px;
+    background: var(--white-color);
+    transition: box-shadow var(--function-transit);
+
+    &:hover {
+        box-shadow: var(--box-shadow-color);
+    }
+}
+
+.plants__content-wrapp {
+    display: flex;
+    position: relative;
+}
+
+.plants__content-wrapp-img-m {
+    padding: 21px 79px 0 79px;
+    margin-bottom: 32px;
+}
+
+.plants__content-wrapp-img-s {
+    position: absolute;
+    top: 10px;
+    left: 225px; // *
+}
+
+.plants__content-info {
+    border-radius: 20px;
+    background: var(--item-section-bg);
+    padding: 21px 20px;
+}
+
+.plants__content-info-title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 3px;
+}
+
+.plants__content-info-text {
+    color: var(--top-line-bg);
+    font-family: var(--accent-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.plants__content-info-price {
+    display: flex;
+}
+
+.plants__content-info-price-wrapp {
+    margin-right: 93px;
+}
+
+.plants__content-info-price-cost {
+    color: var(--bonner-btn-color);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1px;
+}
+
+.plants__content-info-price-quantity {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+// Pagination
+.pagin-img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 90px;
+}
+
+// Plant about
+.plant-about {
+    width: 1920px; // *
+    background-image: url("../img/plants/plant-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 108px 0;
+}
+
+.plant-about__info-wrapp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.plant-about__info-leaf {
+    margin-top: 19px;
+    margin-right: 17px;
+}
+
+.plant-about__info-title {
+    color: var(--white-color);
+    font-family: var(--accent-font);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.plant-about__list {
+    width: 1110px;
+    padding: 0 404px;
+}
+
+.plant-about__item {
+    color: var(--white-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+}

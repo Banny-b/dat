@@ -34,6 +34,39 @@
     }
 }
 
+// Select -> Option
+// ! Доделать стили Select !
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.selec {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden-select {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.hidden-select.show {
+    display: block;
+}
+// ! Доделать стили Select !
+
 .top-line__line {
     position: relative;
     margin-right: 34px;

@@ -1,0 +1,116 @@
+.animals {
+    padding: 46px 0 0 0;
+}
+
+.animals__link-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.animals__link {
+    color: var(--text-color-title);
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 30px;
+    transition: var(--function-transit);
+
+    &:hover {
+        color: var(--black-color);
+    }
+}
+
+.animals__circle {
+    position: relative;
+}
+
+.animals__circle::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 10px;;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--bonner-btn-color);
+}
+
+.animals__text {
+    color: var(--text-color-title);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.animals__wrapp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+
+.animals__img-l {
+    margin-top: 19px;
+    margin-right: 15px;
+}
+
+.animals__title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 15px;
+}
+
+.animals__img-r {
+    margin-top: 19px;
+}
+
+// Animals
+.contain__price {
+    display: flex;
+}
+
+.contain__price-wrapp {
+    color: var(--text-color-title);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 3px;
+}
+
+.contain__price-area {
+    width: 80px;
+    height: 24px;
+    border: 1px solid var(--border-checkbox);
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+.contain__price-dash {
+    display: block;
+    align-self: center;
+    color: var(--border-checkbox);
+    margin-right: 1px;
+    padding: 20px 2px;
+}
+
+.animals-about {
+    width: 1920px;
+    height: 240px; // *
+    background-image: linear-gradient(rgba(30, 30, 37, 0.4), rgba(30, 30, 37, 0.4)), 
+    url("../img/animals/cows.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 108px 0;
+}

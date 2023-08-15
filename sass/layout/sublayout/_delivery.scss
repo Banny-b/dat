@@ -48,8 +48,8 @@
     background: var(--bonner-btn-color);
 }
 
-.delivery__text-link {
-    @extend .about-us__link;
+.delivery__text {
+    @extend .about-us__text;
     font-weight: 700;
     margin-right: 0;
 }

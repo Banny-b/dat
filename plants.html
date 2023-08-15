@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="./img/favicon/dat-32x32.ico" rel="shortcut icon"/>
+    <link type="Image/x-icon" href="./img/favicon/dat-32x32.ico" rel="icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>DAT</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!-- Top line -->
+    <div class="top-line">
+        <nav class="top-line__nav">
+            <ul class="top-line__nav-list list">
+                <li class="top-line__nav-item">
+                    <a href="./about-us.html" class="top-line__nav-link link">Про нас</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="" class="top-line__nav-link link">Каталог продукції</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="./delivery.html" class="top-line__nav-link link">Оплата і доставка</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="./partner-about.html" class="top-line__nav-link link">Партнери</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="./news.html" class="top-line__nav-link link">Новини</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="./contacts.html" class="top-line__nav-link link">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="top-line__line"></span>
+        <div class="authorization">
+            <svg class="authorization__img" width="20" height="20">
+                <use href="./img/top-line/exit.svg#log-out"></use>
+            </svg>
+            <button class="authorization__btn-entry">Вхід</button>
+            <span class="authorization__line">|</span>
+            <button class="authorization__btn-registration">Реєстрація</button>
+        </div>
+    </div>
+    <!-- Header -->
+    <section class="main__about-us">
+        <div class="main__blur-up"></div>
+        <header class="header">
+            <a href="./index.html" class="header__logo-link link">
+                <img src="./img/header/logo.png" alt="logo" class="header__logo">
+            </a>
+            <!-- Search -->
+            <label for="" class="header___input-wrapper">
+                <input class="header__input" type="text" placeholder="Пошук">
+                <span class="header__custom-content">
+                <span class="header__input-line">|</span>
+                <svg class="header__input-img" width="15" height="15">
+                    <use href="./img/header/search.svg#icon-search"></use>
+                </svg>
+                </span>
+            </label>
+            <!-- Phone -->
+            <div class="header__phone-wrapper">
+                <svg class="header__phone-img" width="40" height="40">
+                    <use href="./img/header/call.svg#icon-call"></use>
+                </svg>
+                <div class="header__phone-info">
+                    <a class="header__phone-info-tel link" href="">+38 (067) 115 00 58</a>
+                    <a class="header__phone-info-back link" href="">Замовити зворотній зв’язок</a>
+                </div>
+            </div>
+            <!-- Like -->
+            <ul class="like list">
+                <li class="like__item">
+                    <svg class="like__item-img" width="43" height="40">
+                        <use href="./img/header/heart.svg#icon-heart"></use>
+                    </svg>
+                </li>
+                <li class="like__item">
+                    <svg class="like__item-img" width="40" height="40">
+                        <use href="./img/header/compare.svg#icon-compare"></use>
+                    </svg>
+                </li>
+                <li class="like__item">
+                    <svg class="like__item-img" width="40" height="40">
+                        <use href="./img/header/cart.svg#icon-cart"></use>
+                    </svg>
+                </li>
+                <li class="like__item">
+                    <p class="like__item-price">10,0 грн</p>
+                </li>
+            </ul>
+        </header>
+        <!-- Bonner button -->
+        <div class="bonner">
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn1.svg#icon-btn1"></use></svg>Насіння
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn2.svg#icon-btn2"></use></svg>Засоби захисту рослин
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn3.svg#icon-btn3"></use></svg>Добрива
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn4.svg#icon-btn4"></use></svg>Кормова група
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn5.svg#icon-btn5"></use></svg>Агроному в поміч
+            </button>
+        </div>
+        <!-- Plants -->
+        <section class="plants">
+            <div class="plants__link-cont">
+                <a href="./index.html" class="plants__link link">Головна</a>
+                <div class="plants__circle"></div>
+                <a href="#catalog" class="plants__link link">Каталог</a>
+                <div class="plants__circle"></div>
+                <p class="plants__text">Засоби захисту рослин</p>
+            </div>
+            <div class="plants__wrapp">
+                <svg class="plants__img-l" width="32" height="25">
+                    <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                </svg>
+                <h1 class="plants__title">Засоби захисту рослин</h1>
+                <svg class="plants__img-r" width="32" height="25">
+                    <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+                </svg>
+            </div>
+            <div class="plants-conain">
+                <!-- Side bar box-up-->
+                <div class="plants-conain__sidebar">
+                    <p class="plants-conain__sidebar-info">Показано 628 товарів</p>
+                    <div class="plants-conain__sidebar-wrapp-up">
+                        <ul class="plants-conain__sidebar-list-up list">
+                            <li class="plants-conain__sidebar-item-up">
+                                <a href="" class="plants-conain__sidebar-link-up link">Гербіциди</a>
+                            </li>
+                            <li class="plants-conain__sidebar-item-up">
+                                <a href="" class="plants-conain__sidebar-link-up link">Фунгіциди</a>
+                            </li>
+                            <li class="plants-conain__sidebar-item-up">
+                                <a href="" class="plants-conain__sidebar-link-up link">Інсектициди</a>
+                            </li>
+                            <li class="plants-conain__sidebar-item-up">
+                                <a href="" class="plants-conain__sidebar-link-up link">Десиканти</a>
+                            </li>
+                            <li class="plants-conain__sidebar-item-up">
+                                <a href="" class="plants-conain__sidebar-link-up link">Протруювачі</a>
+                            </li>
+                            <li class="plants-conain__sidebar-item-up">
+                                <a href="" class="plants-conain__sidebar-link-up link">Ад’юванти</a>
+                            </li>
+                            <li class="plants-conain__sidebar-item-up">
+                                <a href="" class="plants-conain__sidebar-link-up link">Родентициди</a>
+                            </li>
+                            <li class="plants-conain__sidebar-item-up">
+                                <a href="" class="plants-conain__sidebar-link-up link">Ретарданти</a>
+                            </li>
+                        </ul>
+                        <ul class="plants-conain__sidebar-list-up-num list">
+                            <li class="plants-conain__sidebar-item-up-num">(229)</li>
+                            <li class="plants-conain__sidebar-item-up-num">(29)</li>
+                            <li class="plants-conain__sidebar-item-up-num">(9)</li>
+                            <li class="plants-conain__sidebar-item-up-num">(209)</li>
+                            <li class="plants-conain__sidebar-item-up-num">(120)</li>
+                            <li class="plants-conain__sidebar-item-up-num">(215)</li>
+                            <li class="plants-conain__sidebar-item-up-num">(410)</li>
+                            <li class="plants-conain__sidebar-item-up-num">(30)</li>
+                        </ul>
+                    </div>
+                    <!-- Side bar box-down-->
+                    <div class="plants-contain__sidebar-down-wrapp">
+                        <h3 class="plants-contain__sidebar-down-title">Фільтр</h3>
+                        <div class="plants-contain__sidebar-box-down">
+                            <h4 class="plants-contain__sidebar-down-subtitle">Виробник</h4>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-1">
+                                <label for="checkbox-1" class="plants-contain__sidebar-label">Нертус</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-2">
+                                <label for="checkbox-2" class="plants-contain__sidebar-label">Басф</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-3">
+                                <label for="checkbox-3" class="plants-contain__sidebar-label">Адама Україна</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-4">
+                                <label for="checkbox-4" class="plants-contain__sidebar-label">Байєр</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-5">
+                                <label for="checkbox-5" class="plants-contain__sidebar-label">ГЗД</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-6">
+                                <label for="checkbox-6" class="plants-contain__sidebar-label">Штефес</label>
+                            </div>
+                            <span class="plants-contain__sidebar-box-line"></span> 
+                            <h4 class="plants-contain__sidebar-down-subtitle">Культура</h4>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-7">
+                                <label for="checkbox-7" class="plants-contain__sidebar-label">Боби</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-8">
+                                <label for="checkbox-8" class="plants-contain__sidebar-label">Буряк кормовий</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-9">
+                                <label for="checkbox-9" class="plants-contain__sidebar-label">Буряк цукровий</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-10">
+                                <label for="checkbox-10" class="plants-contain__sidebar-label">Гірчиця</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-11">
+                                <label for="checkbox-11" class="plants-contain__sidebar-label">Горох</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-12">
+                                <label for="checkbox-12" class="plants-contain__sidebar-label">Жито</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-13">
+                                <label for="checkbox-13" class="plants-contain__sidebar-label">Квасоля</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-14">
+                                <label for="checkbox-14" class="plants-contain__sidebar-label">Конюшина</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-15">
+                                <label for="checkbox-15" class="plants-contain__sidebar-label">Кострець</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-16">
+                                <label for="checkbox-16" class="plants-contain__sidebar-label">Кукурудза</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-17">
+                                <label for="checkbox-17" class="plants-contain__sidebar-label">Люцерна</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-18">
+                                <label for="checkbox-18" class="plants-contain__sidebar-label">Пшениця</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-19">
+                                <label for="checkbox-19" class="plants-contain__sidebar-label">Ріпак</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-20">
+                                <label for="checkbox-20" class="plants-contain__sidebar-label">Соя</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-21">
+                                <label for="checkbox-21" class="plants-contain__sidebar-label">Соняшник</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-22">
+                                <label for="checkbox-22" class="plants-contain__sidebar-label">Тимофіївка</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-23">
+                                <label for="checkbox-23" class="plants-contain__sidebar-label">Тритикале</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-24">
+                                <label for="checkbox-24" class="plants-contain__sidebar-label">Ячмінь</label>
+                            </div>
+                            <span class="plants-contain__sidebar-box-line"></span>
+                            <h4 class="plants-contain__sidebar-down-subtitle">Кількість</h4>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-25">
+                                <label for="checkbox-25" class="plants-contain__sidebar-label">1</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-26">
+                                <label for="checkbox-26" class="plants-contain__sidebar-label">2</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-27">
+                                <label for="checkbox-27" class="plants-contain__sidebar-label">3</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-28">
+                                <label for="checkbox-28" class="plants-contain__sidebar-label">4</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-29">
+                                <label for="checkbox-29" class="plants-contain__sidebar-label">5</label>
+                            </div>
+                            <div class="plants-contain__sidebar-wrapp-down">
+                                <input type="checkbox" class="plants-contain__sidebar-custom-checkbox" id="checkbox-30">
+                                <label for="checkbox-30" class="plants-contain__sidebar-label">6</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="plants-contain__product">
+                    <select name="" id="pageSelector" class="plants-contain__rating-selec">
+                        <option value="" class="plants-contain__rating-opt">Сортувати</option>
+                        <option value="cost.html" class="plants-contain__rating-opt">За ціною</option>
+                        <option value="vogue.html" class="plants-contain__rating-opt">За популярністю</option>
+                    </select>
+                    <ul class="plants__content-list list">
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/2.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="plants__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Скор 250 ЕС к.э.</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">150 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/3.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="novelty__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Січ 350 ЕС к.э.</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">300 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/4.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="plants__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Хорус</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">25 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/2.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="plants__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Скор 250 ЕС к.э.</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">150 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/3.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="novelty__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Січ 350 ЕС к.э.</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">300 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/4.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="plants__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Хорус</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">25 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/2.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="plants__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Скор 250 ЕС к.э.</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">150 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/3.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="novelty__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Січ 350 ЕС к.э.</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">300 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/4.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="plants__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Хорус</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">25 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/2.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="plants__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Скор 250 ЕС к.э.</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">150 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/3.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="novelty__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Січ 350 ЕС к.э.</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">300 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/4.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="plants__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Хорус</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">25 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/2.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="plants__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Скор 250 ЕС к.э.</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">150 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/3.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="novelty__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Січ 350 ЕС к.э.</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">300 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="plants__content-item">
+                            <div class="plants__content-wrapp">
+                                <img src="./img/novelty/4.png" alt="plants-photo" class="plants__content-wrapp-img-m">
+                                <svg class="plants__content-wrapp-img-s">
+                                    <use href="./img/novelty/compare.svg#icon-compare"></use>
+                                </svg>
+                            </div>
+                            <div class="plants__content-info">
+                                <h3 class="plants__content-info-title">Хорус</h3>
+                                <p class="plants__content-info-text">В наявності</p>
+                                <div class="plants__content-info-price">
+                                    <span class="plants__content-info-price-wrapp">
+                                        <h4 class="plants__content-info-price-cost">25 грн</h4>
+                                        <p class="plants__content-info-price-quantity">1 шт</p>
+                                    </span>
+                                    <svg class="plants__content-info-price-img" width="47" height="47">
+                                        <use href="./img/novelty/cart-2.svg#icon-cart-2"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="pagin">
+                <img src="./img/plants/tui-pagin.png" alt="icon-numbers" class="pagin-img">
+            </div>
+            <div class="plants__blur-down"></div>
+            <!-- Plant about -->
+            <div class="plant-about">
+                <div class="plant-about__info-wrapp">
+                    <svg class="plant-about__info-leaf" width="32" height="25">
+                        <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                    </svg>
+                    <h2 class="plant-about__info-title">Засоби захисту рослин</h2>
+                </div>
+                <ul class="plant-about__list list">
+                    <li class="plant-about__item">Засоби захисту рослин поділяють на чотири основні види: механічні, 
+                        хімічні, біологічні та агротехнічні. Проте найраціональніше - це їх одночасне, правильне поєднання. 
+                        Найпоширеніший метод - це хімічний. Існують тисячі різних видів препаратів хімічного захисту. Але 
+                        не варто їх плутати, а тим більше об′єднувати з хімічними добривами. Методи їх впливу на рослини 
+                        абсолютно протилежні.
+                    </li>
+                    <li class="plant-about__item">Необхідно знати і розрізняти хімічні засоби захисту рослин. Адже ці 
+                        препарати мають суворо визначений об′єкт впливу (збудник хвороби, комахи-шкідники, вид або родина 
+                        бур′янів).
+                    </li>
+                    <li class="plant-about__item">Отрутохімікати не терплять халатності. Це той тип препарату, який 
+                        недостатньо просто розвести у воді і обприскати ним рослини. Якщо отрутохімікати неправильно 
+                        застосувати, то вони можуть завдати шкоди вам, корисним комахам, врожаю.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__content-logo">
+                    <img src="./img/footer/logo-footer.png" alt="logo-footer" class="footer__content-logo-img">
+                    <p class="footer__content-logo-text">Пропонуємо покупцям широкий вибір насіння, овочів та добрив.</p>
+                </div>
+                <div class="footer__content-info">
+                    <h3 class="footer__content-info-title">Інформація</h3>
+                    <ul class="footer__content-info-list list">
+                        <li class="footer__content-info-item">
+                            <a class="footer__content-info-item-link link" href="">Про компанію</a>
+                        </li>
+                        <li class="footer__content-info-item">
+                            <a class="footer__content-info-item-link link" href="">Оплата і доставка</a>
+                        </li>
+                        <li class="footer__content-info-item">
+                            <a class="footer__content-info-item-link link" href="">Партнери</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__content-product">
+                    <h3 class="footer__content-product-title">Товари</h3>
+                    <ul class="footer__content-product-list list">
+                        <li class="footer__content-product-item">
+                            <a href="" class="footer__content-product-item-link link">Каталог продукції</a>
+                        </li>
+                        <li class="footer__content-product-item">
+                            <a href="" class="footer__content-product-item-link link">Засоби захисту рослин</a>
+                        </li>
+                        <li class="footer__content-product-item">
+                            <a href="" class="footer__content-product-item-link link">Насіння</a>
+                        </li>
+                        <li class="footer__content-product-item">
+                            <a href="" class="footer__content-product-item-link link">Добрива</a>
+                        </li>
+                        <li class="footer__content-product-item">
+                            <a href="" class="footer__content-product-item-link link">Агроному в поміч</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__content-contact">
+                    <h3 class="footer__content-contact-title">Контакти</h3>
+                    <div class="footer__content-contact-sub1">
+                        <img src="./img/footer/phone.png" alt="phone" class="footer__content-contact-sub1-img" width="40" height="40">
+                        <div class="footer__content-contact-sub1-s2">
+                            <a class="footer__content-contact-sub1-s2-p link" href="">+38 (067) 115 00 58</a>
+                            <a class="footer__content-contact-sub1-s2-t link" href="">Замовити зворотній зв’язок</a>
+                        </div>
+                    </div>
+                    <div class="footer__content-contact-sub2">
+                        <img src="./img/footer/envelope.png" alt="envelope" class="footer__content-contact-sub2-img" width="40" height="40">
+                        <a class="footer__content-contact-sub2-m link" href="">dat@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <span class="footer-line"></span>
+            <p class="footer-license">© 2023 DAT</p>
+            <!-- Top button -->
+            <button class="top-btn" type="button">
+                <svg class="top-img" width="65" height="135">
+                    <use href="./img/footer/top.svg#icon-top"></use>
+                </svg>
+            </button>
+        </footer>
+        <script src="./js/selectPage.js"></script>
+        <script src="./js/scrollToTop.js"></script>
+</body>
+</html>
