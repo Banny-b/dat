@@ -1,0 +1,142 @@
+.entry {
+    padding: 46px 0 90px 0;
+}
+
+.entry__link-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.entry__link {
+    color: var(--text-color-title);
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 30px;
+    transition: var(--function-transit);
+
+    &:hover {
+        color: var(--black-color);
+    }
+}
+
+.entry__circle {
+    position: relative;
+}
+
+.entry__circle::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 10px;;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--bonner-btn-color);
+}
+
+.entry__text {
+    color: var(--text-color-title);
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.entry__wrapp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+
+.entry__img-l {
+    margin-top: 19px;
+    margin-right: 15px;
+}
+
+.entry__title {
+    color: var(--black-color);
+    font-family: var(--accent-font);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 15px;
+}
+
+.entry__img-r {
+    margin-top: 19px;
+}
+
+// Entry
+.entry-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry-form__text {
+    color: var(--black-color);
+    text-align: center; // ?
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.entry-form__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-form__data-value {
+    width: 227px;
+    border-radius: 90px;
+    border: 1px solid var(--border-bg);
+    background: var(--white-color);
+    margin-bottom: 20px;
+    padding: 6px 14px;
+
+    &:last-child {
+        margin-bottom: 10px
+    }
+}
+
+.entry-form__data-remind {
+    @extend .entry-form__text;
+    margin-bottom: 20px;
+    color: var(--text-color-title);
+    transition: var(--function-transit);
+
+    &:hover {
+        color: var(--black-color);
+    }
+}
+
+.entry-form__btn {
+    width: 258px;
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-color: transparent;
+    border-radius: 90px;
+    background: var(--hover-btn);
+    padding: 6px 0;
+    transition: var(--function-transit);
+
+    &:hover {
+        background: var(--header-phone-border);
+    }
+}

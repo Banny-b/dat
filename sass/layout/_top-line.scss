@@ -82,6 +82,12 @@
     background: var(--top-line2-bg);
 }
 
+.authorization {
+    // display: flex;
+    // align-items: center;
+    padding-top: 3px; // ?
+}
+
 .authorization__img {
     vertical-align: middle;
 }

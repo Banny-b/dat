@@ -147,6 +147,10 @@ button {
   background: var(--top-line2-bg);
 }
 
+.authorization {
+  padding-top: 3px;
+}
+
 .authorization__img {
   vertical-align: middle;
 }
@@ -2826,4 +2830,305 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.entry {
+  padding: 46px 0 90px 0;
+}
+
+.entry__link-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.entry__link {
+  color: var(--text-color-title);
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 30px;
+  transition: var(--function-transit);
+}
+.entry__link:hover {
+  color: var(--black-color);
+}
+
+.entry__circle {
+  position: relative;
+}
+
+.entry__circle::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--bonner-btn-color);
+}
+
+.entry__text {
+  color: var(--text-color-title);
+  font-family: var(--accent-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.entry__wrapp {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+}
+
+.entry__img-l {
+  margin-top: 19px;
+  margin-right: 15px;
+}
+
+.entry__title {
+  color: var(--black-color);
+  font-family: var(--accent-font);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 15px;
+}
+
+.entry__img-r {
+  margin-top: 19px;
+}
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entry-form__text, .entry-form__data-remind {
+  color: var(--black-color);
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.entry-form__data {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-form__data-value {
+  width: 227px;
+  border-radius: 90px;
+  border: 1px solid var(--border-bg);
+  background: var(--white-color);
+  margin-bottom: 20px;
+  padding: 6px 14px;
+}
+.entry-form__data-value:last-child {
+  margin-bottom: 10px;
+}
+
+.entry-form__data-remind {
+  margin-bottom: 20px;
+  color: var(--text-color-title);
+  transition: var(--function-transit);
+}
+.entry-form__data-remind:hover {
+  color: var(--black-color);
+}
+
+.entry-form__btn {
+  width: 258px;
+  color: var(--white-color);
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-color: transparent;
+  border-radius: 90px;
+  background: var(--hover-btn);
+  padding: 6px 0;
+  transition: var(--function-transit);
+}
+.entry-form__btn:hover {
+  background: var(--header-phone-border);
+}
+
+.register {
+  padding: 46px 0 90px 0;
+}
+
+.register__link-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.register__link {
+  color: var(--text-color-title);
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 30px;
+  transition: var(--function-transit);
+}
+.register__link:hover {
+  color: var(--black-color);
+}
+
+.register__circle {
+  position: relative;
+}
+
+.register__circle::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--bonner-btn-color);
+}
+
+.register__text {
+  color: var(--text-color-title);
+  font-family: var(--accent-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.register__wrapp {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+}
+
+.register__img-l {
+  margin-top: 19px;
+  margin-right: 15px;
+}
+
+.register__title {
+  color: var(--black-color);
+  font-family: var(--accent-font);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 15px;
+}
+
+.register__img-r {
+  margin-top: 19px;
+}
+
+.regiser-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.regiser-form__text {
+  color: var(--black-color);
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 1000px;
+  margin-bottom: 30px;
+}
+
+.regiser-form__name-data, .regiser-form__connect-data {
+  width: 227px;
+  border-radius: 90px;
+  border: 1px solid var(--border-bg);
+  background: var(--white-color);
+  margin-bottom: 20px;
+  padding: 6px 14px;
+}
+.regiser-form__name-data:not(:last-child), .regiser-form__connect-data:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regiser-form__passw-data {
+  display: block;
+  width: 520px;
+  border-radius: 90px;
+  border: 1px solid var(--border-bg);
+  background: var(--white-color);
+  padding: 6px 14px;
+}
+.regiser-form__passw-data:not(:last-child) {
+  margin-bottom: 20px;
+}
+.regiser-form__passw-data:last-child {
+  margin-bottom: 15px;
+}
+
+.regiser-form__policy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.regiser-form__policy-check {
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+}
+
+.regiser-form__policy-text, .regiser-form__policy-link {
+  color: var(--placeholder-color);
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.regiser-form__policy-link {
+  color: var(--checkbox-color);
+}
+
+.regiser-form__btn {
+  width: 546px;
+  color: var(--white-color);
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-color: transparent;
+  border-radius: 90px;
+  background: var(--hover-btn);
+  padding: 6px 0;
+  transition: var(--function-transit);
+}
+.regiser-form__btn:hover {
+  background: var(--header-phone-border);
 }/*# sourceMappingURL=main.css.map */
