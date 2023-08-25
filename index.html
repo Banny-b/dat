@@ -21,14 +21,15 @@
                     <a href="./about-us.html" class="top-line__nav-link link">Про нас</a>
                 </li>
                 <li class="top-line__nav-item">
-                    <div class="select-wrapper">
-                        <a href="#" class="top-line__nav-link selec link" id="catalog">Каталог продукції</a>
-                        <select class="hidden-select">
-                            <option value="plants" class="top-line__nav-option">Засоби захисту рослин</option>
-                            <option value="animals" class="top-line__nav-option">Для тварин</option>
-                            <option value="birds" class="top-line__nav-option">Для птиці</option>
-                            <option value="fish" class="top-line__nav-option">Для риби</option>
-                        </select>
+                    <!-- Select menu -->
+                    <div class="dropdown">
+                        <button class="dropbtn" id="catalog">Каталог продукції</button>
+                        <div class="dropdown-content">
+                            <a href="./plants.html">Засоби захисту рослин</a>
+                            <a href="./animals.html">Для тварин</a>
+                            <a href="./birds.html">Для птиці</a>
+                            <a href="./fish.html">Для риби</a>
+                        </div>
                     </div>
                 </li>                
                 <li class="top-line__nav-item">
@@ -85,25 +86,102 @@
         <!-- Like -->
         <ul class="like list">
             <li class="like__item">
-                <svg class="like__item-img" width="43" height="40">
-                    <use href="./img/header/heart.svg#icon-heart"></use>
-                </svg>
+                <a href="" class="like__item-link link">
+                    <svg class="like__item-img" width="43" height="40">
+                        <use href="./img/header/heart.svg#icon-heart"></use>
+                    </svg>
+                </a>
             </li>
             <li class="like__item">
-                <svg class="like__item-img" width="40" height="40">
-                    <use href="./img/header/compare.svg#icon-compare"></use>
-                </svg>
+                <a href="" class="like__item-link link">
+                    <svg class="like__item-img" width="40" height="40">
+                        <use href="./img/header/compare.svg#icon-compare"></use>
+                    </svg>
+                </a>
             </li>
             <li class="like__item">
-                <svg class="like__item-img" width="40" height="40">
-                    <use href="./img/header/cart.svg#icon-cart"></use>
-                </svg>
+                <a href="" class="like__item-link link cart-link">
+                    <svg class="like__item-img" width="40" height="40">
+                        <use href="./img/header/cart.svg#icon-cart"></use>
+                    </svg>
+                </a>
             </li>
             <li class="like__item">
-                <p class="like__item-price">10,0 грн</p>
+                <p class="like__item-price">15115 грн</p>
             </li>
         </ul>
     </header>
+    <!-- Cart modal (basket) -->
+    <div class="cart-modal" id="cart-mod">
+        <div class="basket">
+            <svg class="basket__close-btn" width="30" height="30">
+                <use href="./img/basket/close-butt.svg#icon-close-butt"></use>
+            </svg>
+            <div class="basket-content">
+                <div class="basket-title">
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                    </svg>
+                    <h1 class="basket-title__text">Кошик</h1>
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+                    </svg>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-product">
+                    <div>
+                        <h2 class="basket-product__title">Гербіцид Команд® 480 к.э.</h2>
+                        <div class="basket-product__descr">
+                            <img src="./img/basket/basket-img.png" alt="photo-product" class="basket-product__descr-img">
+                            <div class="basket-product__descr-d">
+                                <p class="basket-product__descr-d-price">3023 грн</p>
+                                <p class="basket-product__descr-d-text-1">Ціна за 1 л</p>
+                                <h3 class="basket-product__descr-d-text-2">Виробник</h3>
+                                <span class="basket-product__descr-d-s">
+                                    <img src="./img/basket/fmc.png" alt="photo-manufacture" class="basket-product__descr-d-s-img">
+                                    <p class="basket-product__descr-d-s-text">ФМС Україна</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-product__quantity">
+                        <select name="" id="" class="basket-product__quantity-capacity">
+                            <option value="">Каністра 5 л</option>
+                            <option value="">Каністра 25 л</option>
+                        </select>
+                        <div class="basket-product__quantity-select">
+                            <p class="basket-product__quantity-select-text">Кількість</p>
+                            <svg class="basket-product__quantity-select-img" width="20" height="20" data-action="decrease" data-target="quantity-display">
+                                <use href="./img/basket/min.svg#icon-min"></use>
+                            </svg>
+                            <div class="basket-product__quantity-select-img-num" id="quantity-display">
+                                1
+                            </div>
+                            <svg class="basket-product__quantity-select-img" width="20" height="20" data-action="increase" data-target="quantity-display">
+                                <use href="./img/basket/max.svg#icon-max"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-button">
+                    <a href="" class="basket-button__see link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/shop-cart.svg#icon-shop-cart"></use>
+                        </svg>
+                        <p class="basket-button-text">Продовжити покупки</p>
+                    </a>
+                    <a href="" class="basket-button__design link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/clipboard.svg#icon-clipboard"></use>
+                        </svg>
+                        <p class="basket-button-text">Оформити заказ</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bonner button -->
     <div class="bonner">
         <button class="bonner__btn">
@@ -543,6 +621,8 @@
         </button>
     </footer>
     <script src="./js/topLineSelect.js"></script>
+    <script src="./js/cartModal.js" defer></script>
+    <script src="./js/quantity.js"></script>
     <script src="./js/scrollToTop.js"></script>
 </body>
 </html>

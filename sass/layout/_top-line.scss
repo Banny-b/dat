@@ -34,38 +34,63 @@
     }
 }
 
-// Select -> Option
-// ! Доделать стили Select !
-.select-wrapper {
+// * Select menu
+/* General style for dropdown menu */
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
-.selec {
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(216, 216, 216);
-    padding: 5px 10px;
+  /* Menu button style */
+.dropbtn {
+    color: var(--white-color);
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    opacity: 0.6;
+    background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: var(--function-transit);
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
-.hidden-select {
-    position: absolute;
-    top: 100%;
-    left: 0;
+  /* Style for dropdown menu content */
+.dropdown-content {
     display: none;
-    width: 100%;
-    padding: 5px 10px;
-    background-color: white;
-    border: 1px solid #ccc;
+    position: absolute;
+    background-color: var(--main-bg);
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: var(--box-shadow-color);
     z-index: 1;
 }
 
-.hidden-select.show {
+  /* Style for links inside the menu */
+.dropdown-content a {
+    display: block;
+    color: var(--black-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: var(--function-transit);
+}
+
+  /* Change color of links on hover */
+.dropdown-content a:hover {
+    color: var(--white-color);
+    background-color: var(--bonner-btn-color);
+}
+
+  /* Display menu content on activation (added via JavaScript) */
+.show {
     display: block;
 }
-// ! Доделать стили Select !
+// *
 
 .top-line__line {
     position: relative;
