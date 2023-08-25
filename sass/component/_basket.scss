@@ -11,7 +11,7 @@
     z-index: 50;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 1.2s ease, visibility 1.6s ease;
+    transition: var(--function-transit-2);
 
     &.active {
     // display: block;

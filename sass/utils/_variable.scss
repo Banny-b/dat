@@ -22,6 +22,7 @@
     --main-bg: #F8F8F8;
     --placeholder-color: #484848;
     --function-transit: 0.5s ease;
+    --function-transit-2: opacity 1.2s ease, visibility 1.6s ease;
     --blur-bg-red: radial-gradient(50% 50.00% at 50% 50.00%, rgba(231, 78, 19, 0.10) 0%, rgba(231, 78, 19, 0.00) 100%);
     --blur-bg-green: radial-gradient(50% 50.00% at 50% 50.00%, rgba(132, 190, 81, 0.30) 0%, rgba(210, 230, 189, 0.00) 100%);
 }
