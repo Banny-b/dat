@@ -124,6 +124,7 @@ button {
   cursor: pointer;
   transition: var(--function-transit);
 }
+
 .dropbtn:hover {
   opacity: 1;
 }
@@ -157,6 +158,20 @@ button {
 /* Display menu content on activation (added via JavaScript) */
 .show {
   display: block;
+}
+
+/* Rotate arrow on activation */
+.dropbtnarr {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 
 .top-line__line {
