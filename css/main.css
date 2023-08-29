@@ -56,11 +56,13 @@ button {
   --border-bg: rgba(0, 0, 0, 0.20);
   --border-checkbox: #cccccc;
   --checkbox-color: #84C551;
+  --order-total-bg: #21603F;
   --top-line2-bg:rgba(255, 255, 255, 0.20);
   --item-section-bg: rgba(140, 50, 19, 0.06);
   --header-phone-border: #8C3213;
   --bonner-btn-color: #84BE51;
   --hover-btn: #E74E13;
+  --radio-btn-color: #EC6523;
   --main-bg: #F8F8F8;
   --placeholder-color: #484848;
   --function-transit: 0.5s ease;
@@ -3180,6 +3182,354 @@ button {
   transition: var(--function-transit);
 }
 .regiser-form__btn:hover {
+  background: var(--header-phone-border);
+}
+
+.order {
+  padding: 46px 0 90px 0;
+}
+
+.order__link-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.order__link {
+  color: var(--text-color-title);
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 30px;
+  transition: var(--function-transit);
+}
+.order__link:hover {
+  color: var(--black-color);
+}
+
+.order__circle {
+  position: relative;
+}
+
+.order__circle::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--bonner-btn-color);
+}
+
+.order__text {
+  color: var(--text-color-title);
+  font-family: var(--accent-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.order__wrapp {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+}
+
+.order__img-l {
+  margin-top: 19px;
+  margin-right: 15px;
+}
+
+.order__title {
+  color: var(--black-color);
+  font-family: var(--accent-font);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 15px;
+}
+
+.order__img-r {
+  margin-top: 19px;
+}
+
+.order-contain {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 47px;
+}
+
+.order-contain__form {
+  margin-right: 30px;
+}
+
+.order-contain__contact {
+  color: var(--black-color);
+  font-family: var(--accent-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.order-contain__form-name, .order-contain__form-data {
+  margin-bottom: 20px;
+}
+
+.order-contain__form-name-input, .order-contain__form-data-input {
+  width: 230px;
+  border-radius: 90px;
+  border: 1px solid var(--border-bg);
+  background: var(--white-color);
+  padding: 8px 20px;
+}
+.order-contain__form-name-input:not(:last-child), .order-contain__form-data-input:not(:last-child) {
+  margin-right: 30px;
+}
+
+.order-contain__form-textar {
+  width: 540px;
+  height: 100px;
+  border-radius: 20px;
+  border: 1px solid var(--border-bg);
+  background: var(--white-color);
+  margin-bottom: 30px;
+  padding: 8px 20px;
+  resize: none;
+}
+
+.order-contain__form-line {
+  display: block;
+  width: 540px;
+  height: 1px;
+  background: var(--border-bg);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 26px;
+}
+
+.order-contain__form-city-input, .order-contain__form-index-input-i, .order-contain__form-index-input {
+  width: 270px;
+  border-radius: 90px;
+  border: 1px solid var(--border-bg);
+  background: var(--white-color);
+  margin-bottom: 20px;
+  padding: 8px 20px;
+}
+.order-contain__form-city-input:not(:last-child), .order-contain__form-index-input-i:not(:last-child), .order-contain__form-index-input:not(:last-child) {
+  margin-right: 30px;
+}
+
+.order-contain__form-index-input {
+  margin-bottom: 30px;
+}
+
+.order-contain__form-index-input-i {
+  width: 228px;
+  margin-bottom: 30px;
+}
+
+.order-contain__form-pay {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-contain__form-pay-label {
+  color: var(--placeholder-color);
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.order-contain__form-pay-sel {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid var(--radio-btn-color); /* Оранжевый бордер при */
+  border-radius: 50%;
+  width: 15px; /* Ширина кнопки */
+  height: 15px; /* Высота кнопки */
+  margin-right: 10px;
+  position: relative;
+  outline: none; /* Убираем контур при фокусе */
+  background-color: transparent; /* Убираем фон */
+  padding: 0; /* Убираем внутренний отступ */
+  box-sizing: content-box;
+}
+
+/* Изменение цвета для выбранных радио-кнопок и их рамок */
+.order-contain__form-pay-sel:checked {
+  border-color: var(--radio-btn-color); /* Оранжевый бордер при выборе */
+  background-color: transparent; /* Прозрачный фон при выборе */
+}
+
+/* Стилизация точки внутри радио-кнопки */
+.order-contain__form-pay-sel::before {
+  content: "";
+  display: block;
+  width: 6px; /* Ширина внутренней точки */
+  height: 6px; /* Высота внутренней точки */
+  background-color: var(--radio-btn-color); /* Оранжевый цвет внутренней точки */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Скрыть внутреннюю точку по умолчанию */
+  padding: 0; /* Убираем внутренний отступ у внутренней точки */
+  box-sizing: content-box;
+}
+
+/* Изменение цвета для выбранных радио-кнопок и их точек */
+.order-contain__form-pay-sel:checked::before {
+  opacity: 1; /* Показать внутреннюю точку при выборе */
+}
+
+.order-contain__confirm {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  height: 100%;
+  background: var(--white-color);
+  border-radius: 20px;
+  padding: 20px 60px;
+}
+
+.order-contain__confirm-title {
+  color: var(--black-color);
+  font-family: var(--accent-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.order-contain__confirm-product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.order-contain__confirm-product-img {
+  width: 110px;
+  height: 74px;
+  border: 2px solid var(--border-bg);
+  border-radius: 20px;
+  margin-right: 40px;
+}
+
+.order-contain__confirm-product-info {
+  margin-right: 40px;
+}
+
+.order-contain__confirm-product-name {
+  color: var(--black-color);
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 7px;
+}
+
+.order-contain__confirm-product-cost-wrapp {
+  display: inline-flex;
+}
+
+.order-contain__confirm-product-cost {
+  color: var(--bonner-btn-color);
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 20px;
+}
+
+.order-contain__confirm-product-quant {
+  color: var(--text-color-title);
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  transition: var(--function-transit);
+}
+.order-contain__confirm-product-quant:hover {
+  color: var(--black-color);
+}
+
+.order-contain__confirm-clear {
+  background: transparent;
+  border: none;
+  fill: var(--black-color);
+  fill-opacity: 0.5;
+  transition: var(--function-transit);
+}
+.order-contain__confirm-clear:hover {
+  fill-opacity: 1;
+}
+
+.order-contain__confirm-total {
+  display: flex;
+  align-items: center;
+  background: var(--order-total-bg);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 24px 40px;
+}
+
+.order-contain__confirm-total-product, .order-contain__confirm-total-cost, .order-contain__confirm-total-product-s, .order-contain__confirm-total-cost-s {
+  color: var(--white-color);
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.order-contain__confirm-total-product-s, .order-contain__confirm-total-cost-s {
+  color: var(--checkbox-color);
+  font-weight: 700;
+  margin-right: 190px;
+}
+
+.order-contain__confirm-total-cost-s {
+  margin-right: 0;
+}
+
+.order-contain__confirm-btn {
+  display: block;
+  color: var(--white-color);
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 540px;
+  border-radius: 90px;
+  background: var(--hover-btn);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 18px 0;
+  transition: var(--function-transit);
+}
+.order-contain__confirm-btn:hover {
   background: var(--header-phone-border);
 }
 
