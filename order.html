@@ -54,9 +54,9 @@
             <svg class="authorization__img" width="20" height="20">
                 <use href="./img/top-line/exit.svg#log-out"></use>
             </svg>
-            <button class="authorization__btn-entry">Вхід</button>
+            <a href="./entry.html" class="authorization__btn-entry link">Вхід</a>
             <span class="authorization__line">|</span>
-            <button class="authorization__btn-registration">Реєстрація</button>
+            <a href="./register.html" class="authorization__btn-registration link">Реєстрація</a>
         </div>
     </div>
     <!-- Header -->
@@ -89,14 +89,14 @@
             <!-- Like -->
             <ul class="like list">
                 <li class="like__item">
-                    <a href="" class="like__item-link link">
+                    <a href="" class="like__item-link link cart-link-fav">
                         <svg class="like__item-img" width="43" height="40">
                             <use href="./img/header/heart.svg#icon-heart"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="like__item">
-                    <a href="" class="like__item-link link">
+                    <a href="" class="like__item-link link cart-link-comp">
                         <svg class="like__item-img" width="40" height="40">
                             <use href="./img/header/compare.svg#icon-compare"></use>
                         </svg>
@@ -114,6 +114,96 @@
                 </li>
             </ul>
         </header>
+        <!-- Favorite modal -->
+    <div class="favorit-modal" id="favorit-mod">
+        <div class="basket">
+            <svg class="basket__close-btn-fav" width="30" height="30">
+                <use href="./img/basket/close-butt.svg#icon-close-butt"></use>
+            </svg>
+            <div class="basket-content">
+                <div class="basket-title">
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                    </svg>
+                    <h1 class="basket-title__text">Улюблене</h1>
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+                    </svg>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-product">
+                    <h2 class="basket-product-warning">Нічого не додано!</h2>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-button">
+                    <a href="" class="basket-button__see link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/shop-cart.svg#icon-shop-cart"></use>
+                        </svg>
+                        <p class="basket-button-text">Продовжити покупки</p>
+                    </a>
+                    <a href="./index.html" class="basket-button__design link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/clipboard.svg#icon-clipboard"></use>
+                        </svg>
+                        <p class="basket-button-text">Повернутися</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compare modal -->
+    <div class="compare-modal" id="compare-mod">
+        <div class="basket">
+            <svg class="basket__close-btn-comp" width="30" height="30">
+                <use href="./img/basket/close-butt.svg#icon-close-butt"></use>
+            </svg>
+            <div class="basket-content">
+                <div class="basket-title">
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                    </svg>
+                    <h1 class="basket-title__text">Порівняти</h1>
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+                    </svg>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-product">
+                    <div>
+                        <h2 class="basket-product__title">Гербіцид Команд® 480 к.э.</h2>
+                        <div class="basket-product__descr">
+                            <img src="./img/basket/basket-img.png" alt="photo-product" class="basket-product__descr-img">
+                            <div class="basket-product__descr-d">
+                                <p class="basket-product__descr-d-price">3023 грн</p>
+                                <p class="basket-product__descr-d-text-1">Ціна за 1 л</p>
+                                <h3 class="basket-product__descr-d-text-2">Виробник</h3>
+                                <span class="basket-product__descr-d-s">
+                                    <img src="./img/basket/fmc.png" alt="photo-manufacture" class="basket-product__descr-d-s-img">
+                                    <p class="basket-product__descr-d-s-text">ФМС Україна</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-button">
+                    <a href="" class="basket-button__see link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/shop-cart.svg#icon-shop-cart"></use>
+                        </svg>
+                        <p class="basket-button-text">Продовжити покупки</p>
+                    </a>
+                    <a href="" class="basket-button__design link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/clipboard.svg#icon-clipboard"></use>
+                        </svg>
+                        <p class="basket-button-text">Додати ще</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
         <!-- Cart modal (basket) -->
     <div class="cart-modal" id="cart-mod">
         <div class="basket">
@@ -184,7 +274,6 @@
             </div>
         </div>
     </div>
-
         <!-- Bonner button -->
         <div class="bonner">
             <button class="bonner__btn">
@@ -364,7 +453,7 @@
             </button>
         </footer>
         <script src="./js/topLineSelect.js"></script>
-        <script src="./js/cartModal.js" defer></script>
+        <script src="./js/header3Modal.js"></script>
         <script src="./js/quantity.js"></script>
         <script src="./js/scrollToTop.js"></script>
 </body>
