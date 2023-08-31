@@ -1142,10 +1142,11 @@ button {
   clip: rect(0px, 85px, 135px, 0px);
   border: none;
   background: none;
+  fill: var(--checkbox-color);
+  transition: var(--function-transit);
 }
-
-.top-img:hover {
-  transform: scale(1.02);
+.top-btn:hover {
+  fill: var(--top-line-bg);
 }
 
 .main__about-us {
