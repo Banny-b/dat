@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="./img/favicon/dat-32x32.ico" rel="shortcut icon"/>
+    <link type="Image/x-icon" href="./img/favicon/dat-32x32.ico" rel="icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>DAT</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!-- Top line -->
+    <div class="top-line">
+        <nav class="top-line__nav">
+            <ul class="top-line__nav-list list">
+                <li class="top-line__nav-item">
+                    <a href="./about-us.html" class="top-line__nav-link link">Про нас</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <!-- Select menu -->
+                    <div class="dropdown">
+                        <button class="dropbtn" id="catalog">Каталог продукції</button>
+                        <div class="dropbtnarr">
+                            <img src="./img/top-line/arrow.png" alt="arrow" width="12" height="12">
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="./plants.html">Засоби захисту рослин</a>
+                            <a href="./animals.html">Для тварин</a>
+                            <a href="./birds.html">Для птиці</a>
+                            <a href="./fish.html">Для риби</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="./delivery.html" class="top-line__nav-link link">Оплата і доставка</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="./partner-about.html" class="top-line__nav-link link">Партнери</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="./news.html" class="top-line__nav-link link">Новини</a>
+                </li>
+                <li class="top-line__nav-item">
+                    <a href="./contacts.html" class="top-line__nav-link link">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="top-line__line"></span>
+        <div class="authorization">
+            <svg class="authorization__img" width="20" height="20">
+                <use href="./img/top-line/exit.svg#log-out"></use>
+            </svg>
+            <a href="./entry.html" class="authorization__btn-entry link">Вхід</a>
+            <span class="authorization__line">|</span>
+            <a href="./register.html" class="authorization__btn-registration link">Реєстрація</a>
+        </div>
+    </div>
+    <!-- Header -->
+    <section class="main__about-us">
+        <div class="main__blur-up"></div>
+        <header class="header">
+            <a href="./index.html" class="header__logo-link link">
+                <img src="./img/header/logo.png" alt="logo" class="header__logo">
+            </a>
+            <!-- Search -->
+            <label class="header___input-wrapper">
+                <input class="header__input" type="text" placeholder="Пошук">
+                <span class="header__custom-content">
+                <span class="header__input-line">|</span>
+                <svg class="header__input-img" width="15" height="15">
+                    <use href="./img/header/search.svg#icon-search"></use>
+                </svg>
+                </span>
+            </label>
+            <!-- Phone -->
+            <div class="header__phone-wrapper">
+                <svg class="header__phone-img" width="40" height="40">
+                    <use href="./img/header/call.svg#icon-call"></use>
+                </svg>
+                <div class="header__phone-info">
+                    <a class="header__phone-info-tel link" href="">+38 (067) 115 00 58</a>
+                    <a class="header__phone-info-back link" href="">Замовити зворотній зв’язок</a>
+                </div>
+            </div>
+            <!-- Like -->
+            <ul class="like list">
+                <li class="like__item">
+                    <a href="" class="like__item-link link cart-link-fav">
+                        <svg class="like__item-img" width="43" height="40">
+                            <use href="./img/header/heart.svg#icon-heart"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="like__item">
+                    <a href="" class="like__item-link link cart-link-comp">
+                        <svg class="like__item-img" width="40" height="40">
+                            <use href="./img/header/compare.svg#icon-compare"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="like__item">
+                    <a href="" class="like__item-link link cart-link">
+                        <svg class="like__item-img" width="40" height="40">
+                            <use href="./img/header/cart.svg#icon-cart"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="like__item">
+                    <p class="like__item-price">15115 грн</p>
+                </li>
+            </ul>
+        </header>
+        <!-- Favorite modal -->
+    <div class="favorit-modal" id="favorit-mod">
+        <div class="basket">
+            <svg class="basket__close-btn-fav" width="30" height="30">
+                <use href="./img/basket/close-butt.svg#icon-close-butt"></use>
+            </svg>
+            <div class="basket-content">
+                <div class="basket-title">
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                    </svg>
+                    <h1 class="basket-title__text">Улюблене</h1>
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+                    </svg>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-product">
+                    <h2 class="basket-product-warning">Нічого не додано!</h2>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-button">
+                    <a href="" class="basket-button__see link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/shop-cart.svg#icon-shop-cart"></use>
+                        </svg>
+                        <p class="basket-button-text">Продовжити покупки</p>
+                    </a>
+                    <a href="./index.html" class="basket-button__design link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/clipboard.svg#icon-clipboard"></use>
+                        </svg>
+                        <p class="basket-button-text">Повернутися</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compare modal -->
+    <div class="compare-modal" id="compare-mod">
+        <div class="basket">
+            <svg class="basket__close-btn-comp" width="30" height="30">
+                <use href="./img/basket/close-butt.svg#icon-close-butt"></use>
+            </svg>
+            <div class="basket-content">
+                <div class="basket-title">
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                    </svg>
+                    <h1 class="basket-title__text">Порівняти</h1>
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+                    </svg>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-product">
+                    <div>
+                        <h2 class="basket-product__title">Гербіцид Команд® 480 к.э.</h2>
+                        <div class="basket-product__descr">
+                            <img src="./img/basket/basket-img.png" alt="photo-product" class="basket-product__descr-img">
+                            <div class="basket-product__descr-d">
+                                <p class="basket-product__descr-d-price">3023 грн</p>
+                                <p class="basket-product__descr-d-text-1">Ціна за 1 л</p>
+                                <h3 class="basket-product__descr-d-text-2">Виробник</h3>
+                                <span class="basket-product__descr-d-s">
+                                    <img src="./img/basket/fmc.png" alt="photo-manufacture" class="basket-product__descr-d-s-img">
+                                    <p class="basket-product__descr-d-s-text">ФМС Україна</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-button">
+                    <a href="" class="basket-button__see link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/shop-cart.svg#icon-shop-cart"></use>
+                        </svg>
+                        <p class="basket-button-text">Продовжити покупки</p>
+                    </a>
+                    <a href="" class="basket-button__design link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/clipboard.svg#icon-clipboard"></use>
+                        </svg>
+                        <p class="basket-button-text">Додати ще</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Cart modal (basket) -->
+    <div class="cart-modal" id="cart-mod">
+        <div class="basket">
+            <svg class="basket__close-btn" width="30" height="30">
+                <use href="./img/basket/close-butt.svg#icon-close-butt"></use>
+            </svg>
+            <div class="basket-content">
+                <div class="basket-title">
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                    </svg>
+                    <h1 class="basket-title__text">Кошик</h1>
+                    <svg class="basket-title__img" width="32" height="25">
+                        <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+                    </svg>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-product">
+                    <div>
+                        <h2 class="basket-product__title">Гербіцид Команд® 480 к.э.</h2>
+                        <div class="basket-product__descr">
+                            <img src="./img/basket/basket-img.png" alt="photo-product" class="basket-product__descr-img">
+                            <div class="basket-product__descr-d">
+                                <p class="basket-product__descr-d-price">3023 грн</p>
+                                <p class="basket-product__descr-d-text-1">Ціна за 1 л</p>
+                                <h3 class="basket-product__descr-d-text-2">Виробник</h3>
+                                <span class="basket-product__descr-d-s">
+                                    <img src="./img/basket/fmc.png" alt="photo-manufacture" class="basket-product__descr-d-s-img">
+                                    <p class="basket-product__descr-d-s-text">ФМС Україна</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-product__quantity">
+                        <select class="basket-product__quantity-capacity">
+                            <option>Каністра 5 л</option>
+                            <option>Каністра 25 л</option>
+                        </select>
+                        <div class="basket-product__quantity-select">
+                            <p class="basket-product__quantity-select-text">Кількість</p>
+                            <svg class="basket-product__quantity-select-img" width="20" height="20" data-action="decrease" data-target="quantity-display">
+                                <use href="./img/basket/min.svg#icon-min"></use>
+                            </svg>
+                            <div class="basket-product__quantity-select-img-num" id="quantity-display">
+                                1
+                            </div>
+                            <svg class="basket-product__quantity-select-img" width="20" height="20" data-action="increase" data-target="quantity-display">
+                                <use href="./img/basket/max.svg#icon-max"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <span class="basket-line"></span>
+                <div class="basket-button">
+                    <a href="" class="basket-button__see link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/shop-cart.svg#icon-shop-cart"></use>
+                        </svg>
+                        <p class="basket-button-text">Продовжити покупки</p>
+                    </a>
+                    <a href="./order.html" class="basket-button__design link">
+                        <svg class="basket-button-img" width="20" height="20">
+                            <use href="./img/basket/clipboard.svg#icon-clipboard"></use>
+                        </svg>
+                        <p class="basket-button-text">Оформити заказ</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Bonner button -->
+        <div class="bonner">
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn1.svg#icon-btn1"></use></svg>Насіння
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn2.svg#icon-btn2"></use></svg>Засоби захисту рослин
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn3.svg#icon-btn3"></use></svg>Добрива
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn4.svg#icon-btn4"></use></svg>Кормова група
+            </button>
+            <button class="bonner__btn">
+                <svg class="bonner__btn-img" width="24" height="24"><use href="./img/bonner/btn5.svg#icon-btn5"></use></svg>Агроному в поміч
+            </button>
+        </div>
+        <!-- Policy -->
+        <section class="policy">
+            <div class="policy__link-cont">
+                <a href="./index.html" class="policy__link link">Головна</a>
+                <div class="policy__circle"></div>
+                <p class="policy__text">Політика конфіденційності</p>
+            </div>
+            <div class="policy__wrapp">
+                <svg class="policy__img-l" width="32" height="25">
+                    <use href="./img/hero/leaf-l.svg#icon-leaf-l"></use>
+                </svg>
+                <h1 class="policy__title">Політика конфіденційності</h1>
+                <svg class="policy__img-r" width="32" height="25">
+                    <use href="./img/novelty/leaf-r.svg#icon-leaf-r"></use>
+                </svg>
+            </div>
+            <ul class="policy__list list">
+                <li class="policy__item">DAT дотримується принципів конфіденційності й недоторканості інформації, отриманої 
+                    від клієнтів DAT в рамках надання послуг поштового зв’язку.
+                </li>
+                <li class="policy__item">DAT гарантує збереження інформації з обмеженим доступом та захист персональних даних 
+                    користувачів послуг поштового зв’язку (далі – Користувачі), у т.ч. при використанні офіційного сайту 
+                    Укрпошти, мобільних застосунків, прикладних програмних інтерфейсів та застосувань, платежів та переказів 
+                    за платіжними системами тощо (далі – Послуги).
+                </li>
+                <li class="policy__item">Політика конфіденційності (далі – Політика) націлена на публічне інформування 
+                    Користувачів про порядок збору (обробки), зберігання, передачі персональних даних та інформації, що 
+                    надається в рамках надання Послуг Укрпошти.
+                </li>
+                <li class="policy__item">Використовуючи Послуги DAT, Користувач погоджується з усіма правилами та умовами 
+                    Політики.</li>
+                <li class="policy__item">Перед початком використання Послуг просимо ознайомитися з Політикою.</li>
+            </ul>
+            <h2 class="policy__subtitle">Мета обробки персональних даних</h2>
+            <p class="policy__subtitle-text">Метою обробки персональних даних є надання Послуг.</p>
+            <h2 class="policy__subtitle">Збір персональних даних</h2>
+            <ul class="policy__list list">
+                <li class="policy__item">Персональні дані – відомості чи сукупність відомостей про Користувача, який 
+                    ідентифікований або може бути конкретно ідентифікований.
+                </li>
+                <li class="policy__item">Неперсоніфікована інформація — інформація, яка не прив’язана до конкретного 
+                    Користувача Послуг.
+                </li>
+                <li class="policy__item">Персональні дані, які обробляє ..., охоплюють контактні дані, які надаються 
+                    Користувачами при використанні Послуг (прізвище, ім’я, по батькові, номер телефону, адреса електронної 
+                    пошти тощо); яка використовується для оплати товарів та Послуг Укрпошти; номери та історію поштових 
+                    відправлень тощо. Інформація отримується при використанні Користувачем Послуг, у т.ч. за допомогою сайту 
+                    Укрпошти, мобільних застосунків тощо. Дані передаються Користувачами добровільно з метою забезпечення 
+                    можливості виконання Укрпоштою зобов’язань за Послугами.
+                </li>
+                <li class="policy__item">Неперсоніфікована інформація використовується виключно для формування статистичних 
+                    даних та з метою покращення Послуг, у т.ч. інформування Користувача про нові Послуги. Зокрема у разі 
+                    використання мобільного застосунку, - версія операційної системи, приблизне місцезнаходження мобільного 
+                    пристрою у разі самостійного надання згоди Користувачем на використання гео-локації, IP-адреса пристрою, 
+                    дата та час авторизації у мобільному застосунку.
+                </li>
+            </ul>
+            <h2 class="policy__subtitle">Використання інформації</h2>
+            <p class="policy__subtitle-text-wrapp">Інформація, яку отримує Укрпошта, використовується для:</p>
+            <ul class="policy__list">
+                <li class="policy__item mark">створення облікового запису Користувача;</li>
+                <li class="policy__item mark">надання Послуги або функції, яку замовив Користувач;</li>
+                <li class="policy__item mark">зв’язку з Користувачами з метою інформування про персоналізовані унікальні пропозиції та акції Укрпошти;</li>
+                <li class="policy__item mark">оцінки та аналізу ринку, клієнтів, продуктів та сервісів, які надаються Укрпоштою;</li>
+                <li class="policy__item mark">ефективного клієнтського обслуговування;</li>
+                <li class="policy__item mark">забезпечення оновлення і технічної підтримки Послуг, у т.ч. мобільного застосунку на пристрої Користувача;</li>
+                <li class="policy__item mark">будь-яких інших цілей в обсязі, достатньому для якісного надання Послуг.</li>
+            </ul>
+            <h2 class="policy__subtitle">Передача інформації третім особам</h2>
+            <ul class="policy__list list">
+                <li class="policy__item">Укрпошта може передавати інформацію отриману від Користувачів в рамках надання 
+                    Послуг третім особам з метою належного виконання своїх обов’язків за цими Послугами.
+                </li>
+                <li class="policy__item">Поширення Укрпоштою персональних даних без згоди Користувача або уповноваженої 
+                    ним особи дозволяється у випадках, визначених законом, і лише (якщо це необхідно) в інтересах національної 
+                    безпеки, економічного добробуту та прав людини.
+                </li>
+            </ul>
+            <h2 class="policy__subtitle">Захист конфіденційної інформації та інформації про Користувача</h2>
+            <p class="policy__subtitle-text">Конфіденційна інформація, персональні дані та неперсоніфікована інформація зберігаються 
+                на внутрішніх ресурсах Укрпошти, доступ до яких обмежується згідно з вимогами положень Політики інформаційної безпеки 
+                Укрпошти.
+            </p>
+            <h2 class="policy__subtitle">Безпека</h2>
+            <ul class="policy__list list">
+                <li class="policy__item">На веб-ресурсах Укрпошти вжиті достатні заходи для захисту інформації, проте просимо прийняти 
+                    до уваги, що абсолютно безпечного та безпомилкового шляху передачі даних мережею Інтернет не існує.
+                </li>
+                <li class="policy__item">Укрпошта не несе відповідальності за функціонування серверів, постачальників послуги доступу 
+                    до мережі Інтернет, роботу третіх осіб, з вини яких може бути неможливий чи обмежений доступ до сайту, можливий 
+                    витік інформації з вини третіх осіб, а також за розголошення Користувачем своїх персональних даних, у т.ч. даних 
+                    авторизації на сайті Укрпошти, у мобільних застосунках, прикладних програмних інтерфейсах та застосуваннях.
+                </li>
+                <li class="policy__item">Інформація, що розміщена на веб-ресурсах Укрпошти, охороняється діючим законодавством, яке 
+                    регулює право інтелектуальної власності. Тиражування, переклад, запис в архіві, копіювання на інші електронні 
+                    носії інформації, яка розміщена, заборонена.
+                </li>
+            </ul>
+            <h2 class="policy__subtitle">Файли cookie</h2>
+            <ul class="policy__list list">
+                <li class="policy__item">Cookie — це невеликі текстові файли, які зберігаються на пристроях Користувача під час 
+                    відвідування сайту Укрпошти. На сайті Укрпошти можуть бути використані файли cookie, щоб зрозуміти, який 
+                    вміст вас цікавить, і запам’ятати вас, якщо ви знову завітаєте на сайт. Укрпошта зберігає файли cookie, щоб 
+                    забезпечити технічно бездоганне і оптимізоване надання Послуг.
+                </li>
+                <li class="policy__item">Файли cookie, які можуть бути використані Укрпоштою, не можуть завдати шкоди пристроям 
+                    Користувача. Більшість файлів cookie, які можуть бути використані Укрпоштою, є так званими сеансовими файлами 
+                    cookie, які автоматично видаляються в кінці відвідування Користувачем веб-сайту Укрпошти. Інші файли cookie 
+                    залишаються на пристроях Користувача до тих пір, поки він їх не видалить. Ці файли cookie дозволяють 
+                    розпізнавати браузер Користувача при наступному відвідуванні.
+                </li>
+            </ul>
+        </section>
+        <div class="main__blur-down"></div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content-logo">
+                <img src="./img/footer/logo-footer.png" alt="logo-footer" class="footer__content-logo-img">
+                <p class="footer__content-logo-text">Пропонуємо покупцям широкий вибір насіння, овочів та добрив.</p>
+            </div>
+            <div class="footer__content-info">
+                <h3 class="footer__content-info-title">Інформація</h3>
+                <ul class="footer__content-info-list list">
+                    <li class="footer__content-info-item">
+                        <a class="footer__content-info-item-link link" href="">Про компанію</a>
+                    </li>
+                    <li class="footer__content-info-item">
+                        <a class="footer__content-info-item-link link" href="">Оплата і доставка</a>
+                    </li>
+                    <li class="footer__content-info-item">
+                        <a class="footer__content-info-item-link link" href="">Партнери</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-product">
+                <h3 class="footer__content-product-title">Товари</h3>
+                <ul class="footer__content-product-list list">
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Каталог продукції</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Засоби захисту рослин</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Насіння</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Добрива</a>
+                    </li>
+                    <li class="footer__content-product-item">
+                        <a href="" class="footer__content-product-item-link link">Агроному в поміч</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-contact">
+                <h3 class="footer__content-contact-title">Контакти</h3>
+                <div class="footer__content-contact-sub1">
+                    <img src="./img/footer/phone.png" alt="phone" class="footer__content-contact-sub1-img" width="40" height="40">
+                    <div class="footer__content-contact-sub1-s2">
+                        <a class="footer__content-contact-sub1-s2-p link" href="">+38 (067) 115 00 58</a>
+                        <a class="footer__content-contact-sub1-s2-t link" href="">Замовити зворотній зв’язок</a>
+                    </div>
+                </div>
+                <div class="footer__content-contact-sub2">
+                    <img src="./img/footer/envelope.png" alt="envelope" class="footer__content-contact-sub2-img" width="40" height="40">
+                    <a class="footer__content-contact-sub2-m link" href="">dat@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <span class="footer-line"></span>
+        <p class="footer-license">© 2023 DAT</p>
+        <!-- Top button -->
+        <button class="top-btn" type="button">
+            <svg class="top-img" width="65" height="135">
+                <use href="./img/footer/top.svg#icon-top"></use>
+            </svg>
+        </button>
+    </footer>
+    <script src="./js/topLineSelect.js"></script>
+    <script src="./js/header3Modal.js"></script>
+    <script src="./js/quantity.js"></script>
+    <script src="./js/scrollToTop.js"></script>
+</body>
+</html>

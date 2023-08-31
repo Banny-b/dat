@@ -152,6 +152,11 @@
 .regiser-form__policy-link {
     @extend .regiser-form__policy-text;
     color: var(--checkbox-color);
+    transition: var(--function-transit);
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .regiser-form__btn {
